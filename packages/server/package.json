@@ -1,0 +1,56 @@
+{
+    "bin": "build/src/main.js",
+    "pkg": {
+        "scripts": [],
+        "assets": []
+    },
+    "name": "@cot/server",
+    "version": "0.7.2",
+    "private": true,
+    "description": "cot server",
+    "main": "build/src/index.js",
+    "type": "commonjs",
+    "keywords": [
+        "cot",
+        "server"
+    ],
+    "author": "wzx",
+    "license": "MIT",
+    "files": [
+        "build"
+    ],
+    "dependencies": {
+        "@bnqkl/wallet-sdk": "^0.23.1",
+        "@nestjs/common": "^10.0.0",
+        "@nestjs/config": "^3.2.3",
+        "@nestjs/core": "^10.0.0",
+        "@nestjs/jwt": "^10.2.0",
+        "@nestjs/mapped-types": "*",
+        "@nestjs/passport": "^10.0.3",
+        "@nestjs/platform-express": "^10.3.10",
+        "@nestjs/platform-socket.io": "^10.3.10",
+        "@nestjs/swagger": "^7.4.0",
+        "@nestjs/typeorm": "^10.0.2",
+        "amqplib": "^0.10.3",
+        "cron": "^2.4.4",
+        "ethers": "^6.6.4",
+        "express-rate-limit": "^6.7.0",
+        "helmet": "^6.0.0",
+        "js-sha256": "^0.9.0",
+        "latest": "^0.2.0",
+        "moment": "^2.29.4",
+        "mysql2": "^2.3.3",
+        "passport": "^0.6.0",
+        "passport-jwt": "^4.0.1",
+        "rate-limit-redis": "^4.1.1",
+        "reflect-metadata": "^0.1.13",
+        "rimraf": "^3.0.2",
+        "rxjs": "^7.2.0",
+        "stacktrace-js": "^2.0.2",
+        "tencentcloud-sdk-nodejs-captcha": "^4.0.701",
+        "typeorm": "^0.3.20"
+    },
+    "devDependencies": {
+        "@types/cron": "^2.4.0"
+    }
+}

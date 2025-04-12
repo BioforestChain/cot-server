@@ -1,0 +1,17 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+if read local_ref local_sha remote_ref remote_sha; then
+    remote="$1"
+    url="$2"
+    # npm run build
+    B="paychain"
+    A=$remote_ref
+    if [[ $A == *$B* ]]  
+    then
+        echo "dev, test build"
+        npm run build
+    else 
+        echo "not dev. can push"
+    fi
+    exit 0
+fi

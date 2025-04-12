@@ -1,0 +1,36 @@
+{
+    "extends": "../../tsconfig.build.json",
+    "compilerOptions": {
+        "outDir": "./build/src",
+        "rootDir": "./src",
+        "tsBuildInfoFile": "./build/tsconfig.tsbuildinfo"
+    },
+    "include": ["src/**/*"],
+    "files": [
+        "src/admin/@types.ts",
+        "src/admin/constants.ts",
+        "src/admin/index.ts",
+        "src/exception/errorCode.ts",
+        "src/exception/index.ts",
+        "src/external-chain/@types.ts",
+        "src/external-chain/constants.ts",
+        "src/external-chain/index.ts",
+        "src/index.ts",
+        "src/internal-chain/@types.ts",
+        "src/internal-chain/constants.ts",
+        "src/internal-chain/index.ts",
+        "src/recharge/@types.ts",
+        "src/recharge/constants.ts",
+        "src/recharge/helper.ts",
+        "src/recharge/index.ts",
+        "src/redemption/@types.ts",
+        "src/redemption/constants.ts",
+        "src/redemption/index.ts",
+        "src/typings/@types.ts",
+        "src/typings/constants.ts",
+        "src/typings/index.ts",
+        "src/verify/@types.ts",
+        "src/verify/constants.ts",
+        "src/verify/index.ts"
+    ]
+}

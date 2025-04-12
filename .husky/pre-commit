@@ -1,0 +1,15 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+FILES=$(git diff --cached --name-only --diff-filter=ACMR )
+EXCLUDE_PATH=("packages/wallet" "packages/server-util")
+EXCLUE_REGEX=$(IFS="|"; echo "${EXCLUDE_PATH[*]}")
+FILES_EXCLUDE=$(echo "$FILES" | grep -Ev "$EXCLUE_REGEX")
+echo "$FILES_EXCLUDE"
+# echo "$FILES"
+[ -z "$FILES_EXCLUDE" ] && exit 0
+
+# Prettify all selected files
+echo "$FILES_EXCLUDE" | xargs prettier --ignore-unknown --write
+
+echo "$FILES_EXCLUDE" | xargs git add 
+exit 0

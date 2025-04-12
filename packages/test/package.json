@@ -1,0 +1,25 @@
+{
+    "name": "@cot/test",
+    "version": "0.7.2",
+    "private": true,
+    "description": "cot test",
+    "bin": "build/src/test-main.js",
+    "pkg": {
+        "scripts": [],
+        "assets": []
+    },
+    "main": "build/src/test-main.js",
+    "type": "commonjs",
+    "keywords": [
+        "cot",
+        "test"
+    ],
+    "author": "wzx",
+    "license": "MIT",
+    "files": [
+        "build"
+    ],
+    "dependencies": {
+        "@bfmeta/transaction-maker-api": "^1.1.11"
+    }
+}

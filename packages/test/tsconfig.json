@@ -1,0 +1,48 @@
+{
+    "extends": "../../tsconfig.build.json",
+    "compilerOptions": {
+        "outDir": "./build/src",
+        "rootDir": "./src",
+        "tsBuildInfoFile": "./build/tsconfig.tsbuildinfo",
+        "baseUrl": "."
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules", "dist", "test", "**/*spec.ts"],
+    "files": [
+        "src/@type.ts",
+        "src/admin/api.ts",
+        "src/admin/getConfig.ts",
+        "src/admin/setRechargeConfig.ts",
+        "src/admin/test.ts",
+        "src/api/common.api.ts",
+        "src/api/external-transfer.api.ts",
+        "src/api/recharge.api.ts",
+        "src/api/redemption.api.ts",
+        "src/api/trans.api.ts",
+        "src/common/common.test.ts",
+        "src/config/api.ts",
+        "src/config/getConfig.ts",
+        "src/config/setConfig.ts",
+        "src/constant.ts",
+        "src/helper/base.helper.ts",
+        "src/helper/index.ts",
+        "src/httpHelper.ts",
+        "src/index.ts",
+        "src/recharge/recharge-api.test.ts",
+        "src/recharge/recharge-test.module.ts",
+        "src/recharge/tr.ts",
+        "src/redemption/redemption-api.test.ts",
+        "src/redemption/redemption-test.module.ts",
+        "src/test-main.ts",
+        "src/test.app.ts",
+        "src/test.module.ts",
+        "src/trans/trans-api.test.ts",
+        "src/trans/trans-test.module.ts",
+        "src/trans/transactions.ts"
+    ],
+    "references": [
+        {
+            "path": "../server/tsconfig.json"
+        }
+    ]
+}
