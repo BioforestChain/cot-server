@@ -5,7 +5,7 @@
         "assets": []
     },
     "name": "@cot/server",
-    "version": "0.7.2",
+    "version": "0.7.3",
     "private": true,
     "description": "cot server",
     "main": "build/src/index.js",

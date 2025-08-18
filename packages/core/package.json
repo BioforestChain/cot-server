@@ -1,6 +1,6 @@
 {
     "name": "@cot/core",
-    "version": "0.7.2",
+    "version": "0.7.3",
     "description": "cot core",
     "main": "build/src/index.js",
     "type": "commonjs",

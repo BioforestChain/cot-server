@@ -1,6 +1,6 @@
 {
     "name": "@cot/test",
-    "version": "0.7.2",
+    "version": "0.7.3",
     "private": true,
     "description": "cot test",
     "bin": "build/src/test-main.js",
