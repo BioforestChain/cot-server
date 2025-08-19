@@ -1,6 +1,6 @@
 {
     "name": "@bnqkl/cot-test",
-    "version": "0.7.3",
+    "version": "2.0.0",
     "private": true,
     "description": "cot test",
     "bin": "build/src/test-main.js",

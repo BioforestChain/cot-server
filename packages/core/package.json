@@ -1,6 +1,6 @@
 {
     "name": "@bnqkl/cot-core",
-    "version": "0.7.3",
+    "version": "2.0.0",
     "description": "cot core",
     "exports": {
         ".": "./build/index.js"
