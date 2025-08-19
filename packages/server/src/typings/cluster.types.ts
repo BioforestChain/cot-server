@@ -1,5 +1,6 @@
-import { ExternalAssetType, ExternalChainName, INTERNAL_CHAIN_RW_ACCOUNT_TYPE } from "@cot/core";
-import { CMD } from "../common";
+import type { ExternalChainName} from "@bnqkl/cot-core";
+import { ExternalAssetType, INTERNAL_CHAIN_RW_ACCOUNT_TYPE } from "@bnqkl/cot-core";
+import type { CMD } from "../common/index.js";
 
 export {};
 declare global {

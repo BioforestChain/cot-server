@@ -1,4 +1,4 @@
-import { Logger, COT_VERIFY_API_REQUEST, NetWorkHelper } from "@cot/server";
+import { Logger, COT_VERIFY_API_REQUEST, NetWorkHelper } from "@bnqkl/cot-server";
 
 export abstract class CommonApi {
     static async getToken(argv: COTCore.Verify.Api.GetTokenReqDto, networkHelper: NetWorkHelper) {

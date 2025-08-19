@@ -1,9 +1,9 @@
 import { Controller, forwardRef, Get, Inject, Query, Post, Body } from "@nestjs/common";
 import { ApiTags } from "@nestjs/swagger";
-import { GlobalValueRedisRepository } from "../../redis/global-value.redis-repository";
-import { SystemService } from "./system.service";
-// import { AdminReqDto } from "../dto/admin-req.dto";
-import { AdminAuthorization } from "../../../common";
+import { GlobalValueRedisRepository } from "../../redis/global-value.redis-repository.js";
+import { SystemService } from "./system.service.js";
+// import { AdminReqDto } from "../dto/admin-req.dto.js";
+import { AdminAuthorization } from "../../../common/index.js";
 import { RequestStatRedisRepository } from "@bnqkl/wallet-sdk";
 
 @ApiTags("ADMIN/SYSTEM")

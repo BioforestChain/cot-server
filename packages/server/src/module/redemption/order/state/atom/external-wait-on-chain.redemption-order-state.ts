@@ -1,12 +1,12 @@
 import { forwardRef, Inject, Injectable } from "@nestjs/common";
 import { sleep, Logger, EXTERNAL_TRANS_RETRY_INVERVAL, EXTERNAL_TRANS_RETRY_MAX_NUM } from "@bnqkl/wallet-sdk";
-import { LOCAL_MQ_ID, ORDER_TEMP_QUEUE_ROUTING_KEY, TRANSACTION_LINK_TYPE } from "../../../../../common";
-import { RedemptionHelper, walletServerSdk } from "../../../../../helper";
-import { RedemptionOrderObj } from "../../redemption-order-obj";
-import { ExternalChainName, REDEMPTION_ORDER_STATE_ID } from "@cot/core";
-import { businessPublisher } from "../../../../mq";
-import { RedemptionOrderPendingState } from "../redemption-order-pending.state";
-import { GlobalValueRedisRepository } from "../../../../redis/global-value.redis-repository";
+import { LOCAL_MQ_ID, ORDER_TEMP_QUEUE_ROUTING_KEY, TRANSACTION_LINK_TYPE } from "../../../../../common/index.js";
+import { RedemptionHelper, walletServerSdk } from "../../../../../helper/index.js";
+import type { RedemptionOrderObj } from "../../redemption-order-obj.js";
+import { ExternalChainName, REDEMPTION_ORDER_STATE_ID } from "@bnqkl/cot-core";
+import { businessPublisher } from "../../../../mq/index.js";
+import { RedemptionOrderPendingState } from "../redemption-order-pending.state.js";
+import { GlobalValueRedisRepository } from "../../../../redis/global-value.redis-repository.js";
 
 /**等待外链上链状态 */
 @Injectable()

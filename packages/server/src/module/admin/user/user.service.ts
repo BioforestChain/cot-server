@@ -1,17 +1,17 @@
 import { Inject, Injectable } from "@nestjs/common";
-import { FindOptionsWhere } from "typeorm";
-import { JwtService } from "@nestjs/jwt";
+import type { FindOptionsWhere } from "typeorm";
+import type { JwtService } from "@nestjs/jwt";
 import { CommonHelper, EncryptHelper, redisCore, ResponseError } from "@bnqkl/server-util";
-import { ErrorCode, USER_STATUS, USER_ROLE } from "@cot/core";
-import { VerifyHelper } from "../../../helper";
-import { EXPIRED_TIME_REDIS, OperateRecordEntity, OperateRecordRepository, UserEntity, UserRepository, USER_PASSWORD_DEFAULT } from "../../../common";
+import { ErrorCode, USER_STATUS, USER_ROLE } from "@bnqkl/cot-core";
+import { VerifyHelper } from "../../../helper/index.js";
+import { EXPIRED_TIME_REDIS, OperateRecordEntity, OperateRecordRepository, UserEntity, UserRepository, USER_PASSWORD_DEFAULT } from "../../../common/index.js";
 
 @Injectable()
 export class UserService {
     @Inject(UserRepository)
-    private __userRepository: UserRepository;
+    private __userRepository!: UserRepository;
     @Inject(OperateRecordRepository)
-    private __operateRecordRepository: OperateRecordRepository;
+    private __operateRecordRepository!: OperateRecordRepository;
 
     constructor(private __jwtService: JwtService) {}
 

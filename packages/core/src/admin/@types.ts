@@ -1,6 +1,6 @@
-import { FIX_RECHARGE_ORDER_TYPE, FIX_REDEMPTION_ORDER_TYPE } from "./constants";
-import { RECHARGE_ORDER_STATE_ID } from "../recharge";
-import { REDEMPTION_ORDER_STATE_ID } from "../redemption";
+import { FIX_RECHARGE_ORDER_TYPE, FIX_REDEMPTION_ORDER_TYPE } from "./constants.js";
+import { RECHARGE_ORDER_STATE_ID } from "../recharge/index.js";
+import { REDEMPTION_ORDER_STATE_ID } from "../redemption/index.js";
 
 export {};
 declare global {

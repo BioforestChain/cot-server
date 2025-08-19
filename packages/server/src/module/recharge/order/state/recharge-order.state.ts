@@ -1,8 +1,9 @@
-import { INTERNAL_CHAIN_RW_ACCOUNT_TYPE, RECHARGE_ORDER_STATE_ID } from "@cot/core";
+import type { INTERNAL_CHAIN_RW_ACCOUNT_TYPE} from "@bnqkl/cot-core";
+import { RECHARGE_ORDER_STATE_ID } from "@bnqkl/cot-core";
 import { forwardRef, Inject } from "@nestjs/common";
 import { Logger, OrderState } from "@bnqkl/wallet-sdk";
-import { RechargeService } from "../../recharge.service";
-import { RechargeOrderObj } from "../recharge-order-obj";
+import { RechargeService } from "../../recharge.service.js";
+import type { RechargeOrderObj } from "../recharge-order-obj.js";
 
 /**充值订单状态基类 */
 export abstract class RechargeOrderState extends OrderState<RECHARGE_ORDER_STATE_ID> implements COTServer.Recharge.OrderState {

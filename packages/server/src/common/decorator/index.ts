@@ -1,1 +1,1 @@
-export * from "./auth-info.decorator";
+export * from "./auth-info.decorator.js";

@@ -12,11 +12,11 @@ import {
     redisCore,
     sleep,
     staticConfig,
-} from "@cot/server";
-import { RechargeApi } from "../api/recharge.api";
-import { CommonTest } from "../common/common.test";
-import { ExternalTransferApi } from "../api/external-transfer.api";
-import { BSC_MNEMONIC, BSC_PRIVATEKEY, ETH_MNEMONIC, TRON_MNEMONIC_1 } from "../constant";
+} from "@bnqkl/cot-server";
+import { RechargeApi } from "../api/recharge.api.js";
+import { CommonTest } from "../common/common.test.js";
+import { ExternalTransferApi } from "../api/external-transfer.api.js";
+import { BSC_MNEMONIC, BSC_PRIVATEKEY, ETH_MNEMONIC, TRON_MNEMONIC_1 } from "../constant.js";
 
 @Injectable()
 export class RechargeApiTest extends CommonTest {

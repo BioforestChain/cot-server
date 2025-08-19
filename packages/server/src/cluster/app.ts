@@ -1,4 +1,4 @@
-import { staticConfig } from "../config";
+import { staticConfig } from "../config/index.js";
 import { CommonApp, rabbitMQCore, redisCore } from "@bnqkl/wallet-sdk";
 
 export abstract class BaseApp extends CommonApp {

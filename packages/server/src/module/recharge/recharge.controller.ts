@@ -1,15 +1,15 @@
-import { encodeRechargeV2ToTrInfoData, COT_RECHARGE_API_REQUEST } from "@cot/core";
+import { encodeRechargeV2ToTrInfoData, COT_RECHARGE_API_REQUEST } from "@bnqkl/cot-core";
 import { Body, Controller, forwardRef, Get, Inject, Post, Query } from "@nestjs/common";
 import { ApiOperation, ApiTags } from "@nestjs/swagger";
-import { internalChainHelper, VerifyHelper } from "../../helper";
-import {
+import { internalChainHelper, VerifyHelper } from "../../helper/index.js";
+import type {
     RechargeRecordsReqDto,
     RechargeRetryExternalOnChainReqDto,
     RechargeRetryInternalOnChainReqDto,
     RechargeRecordDetailReqDto,
     RechargeV2ReqDto,
-} from "./dto";
-import { RechargeService } from "./recharge.service";
+} from "./dto/index.js";
+import { RechargeService } from "./recharge.service.js";
 
 @ApiTags("RECHARGE")
 @Controller()

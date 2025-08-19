@@ -1,18 +1,18 @@
-import {
+import type {
     ExternalChainName,
     FIX_RECHARGE_ORDER_TYPE,
     FIX_REDEMPTION_ORDER_TYPE,
     InternalChainName,
     RECHARGE_ORDER_STATE_ID,
     REDEMPTION_ORDER_STATE_ID,
-} from "@cot/core";
+} from "@bnqkl/cot-core";
 import { ApiProperty } from "@nestjs/swagger";
-import { PageReqDto } from "../../../common";
+import { PageReqDto } from "../../../common/index.js";
 
 export class GetOrderDetailReqDto implements COTCore.Api.Admin.Order.GetOrderDetailReqDto {
     /**订单id */
     @ApiProperty({ description: "订单id" })
-    entityId: string;
+    entityId!: string;
 }
 export class GetRechargeOrdersReqDto extends PageReqDto implements COTCore.Api.Admin.Order.GetRechargeOrdersReqDto {
     /**订单id */
@@ -35,10 +35,10 @@ export class GetRechargeOrdersReqDto extends PageReqDto implements COTCore.Api.A
 export class FixRechargeOrderReqDto implements COTCore.Api.Admin.Order.FixRechargeOrderReqDto {
     /**订单id */
     @ApiProperty({ description: "订单id" })
-    entityId: string;
+    entityId!: string;
     /**订单id */
     @ApiProperty({ description: "订单修改方式" })
-    fixType: FIX_RECHARGE_ORDER_TYPE;
+    fixType!: FIX_RECHARGE_ORDER_TYPE;
 }
 
 export class GetRedemptionOrdersReqDto extends PageReqDto implements COTCore.Api.Admin.Order.GetRedemptionOrdersReqDto {
@@ -60,22 +60,22 @@ export class GetRedemptionOrdersReqDto extends PageReqDto implements COTCore.Api
 export class FixRedemptionOrderReqDto implements COTCore.Api.Admin.Order.FixRedemptionOrderReqDto {
     /**订单id */
     @ApiProperty({ description: "订单id" })
-    entityId: string;
+    entityId!: string;
     /**订单id */
     @ApiProperty({ description: "订单修改方式" })
-    fixType: FIX_REDEMPTION_ORDER_TYPE;
+    fixType!: FIX_REDEMPTION_ORDER_TYPE;
 }
 
 export class GetExternalTransReqDto implements WalletTypings.ExternalChain.Api.GetExternalTransReqDto {
     @ApiProperty({ description: "链名" })
-    chainName: ExternalChainName;
+    chainName!: ExternalChainName;
     @ApiProperty({ description: "交易表entityId" })
-    txId: string;
+    txId!: string;
 }
 
 export class GetInternalTransReqDto implements WalletTypings.InternalChain.Api.GetInternalTransReqDto {
     @ApiProperty({ description: "链名" })
-    chainName: InternalChainName;
+    chainName!: InternalChainName;
     @ApiProperty({ description: "交易表entityId" })
-    txId: string;
+    txId!: string;
 }

@@ -1,9 +1,9 @@
-import { NetWorkHelper, staticConfig } from "@cot/server";
-import { AdminApi } from "./api";
+import { NetWorkHelper, staticConfig } from "@bnqkl/cot-server";
+import { AdminApi } from "./api.js";
 import { EncryptHelper } from "@bnqkl/server-util";
 import * as crypto from "crypto";
 
-import { bfmetaSignUtil, timeTool, InternalChainName, InternalAssetType } from "@cot/server";
+import { bfmetaSignUtil, timeTool, InternalChainName, InternalAssetType } from "@bnqkl/cot-server";
 
 (async () => {
     try {

@@ -1,9 +1,9 @@
-import { REDEMPTION_ORDER_STATE_ID } from "@cot/core";
+import type { REDEMPTION_ORDER_STATE_ID } from "@bnqkl/cot-core";
 import { Logger, OrderObj } from "@bnqkl/wallet-sdk";
-import { RedemptionOrder } from "../../../common";
-import { RedemptionOrderRepository } from "../redemption.repository";
-import { RedemptionOrderMgr } from "./redemption-order-mgr";
-import { RedemptionOrderState } from "./state";
+import type { RedemptionOrder } from "../../../common/index.js";
+import type { RedemptionOrderRepository } from "../redemption.repository.js";
+import type { RedemptionOrderMgr } from "./redemption-order-mgr.js";
+import type { RedemptionOrderState } from "./state/index.js";
 
 /**赎回订单的逻辑对象 */
 export class RedemptionOrderObj extends OrderObj<REDEMPTION_ORDER_STATE_ID, RedemptionOrderState, RedemptionOrder> implements COTServer.Redemption.OrderObj {

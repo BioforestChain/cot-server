@@ -1,5 +1,8 @@
 import { forwardRef, Inject, Injectable } from "@nestjs/common";
-import { GLOBAL_VALUE_ENTITY_ID, LOCAL_MQ_ID, ORDER_TYPE, RECHARGE_HKEY, RechargeOrder, TRANSACTION_LINK_TYPE } from "../../common";
+import { GLOBAL_VALUE_ENTITY_ID, LOCAL_MQ_ID, ORDER_TYPE, RECHARGE_HKEY, RechargeOrder, TRANSACTION_LINK_TYPE } from "../../common/index.js";
+import type {
+    InternalAssetType,
+    ExternalAssetType} from "@bnqkl/wallet-sdk";
 import {
     CommonHelper,
     $asyncAllNoNullMap,
@@ -7,28 +10,28 @@ import {
     MEM_TIME_CACHE_STRATEGY,
     Logger,
     BCF_DEFAULT_DECIMALS,
-    InternalAssetType,
     ChainHelper,
     ResponseError,
-    ExternalAssetType,
     ExternalMainAssetType,
 } from "@bnqkl/wallet-sdk";
-import { GlobalValueRedisRepository } from "../redis";
-import { RechargeRecordsReqDto, RechargeV2ReqDto } from "./dto";
-import { RechargeOrderRepository } from "./recharge.repository";
-import { MemoryService } from "../memory/memory.service";
-import { OrderHelper, RechargeHelper, VerifyHelper, walletServerSdk } from "../../helper";
+import { GlobalValueRedisRepository } from "../redis/index.js";
+import type { RechargeRecordsReqDto, RechargeV2ReqDto } from "./dto/index.js";
+import { RechargeOrderRepository } from "./recharge.repository.js";
+import { MemoryService } from "../memory/memory.service.js";
+import { OrderHelper, RechargeHelper, VerifyHelper, walletServerSdk } from "../../helper/index.js";
+import type {
+    InternalChainName} from "@bnqkl/cot-core";
 import {
     RECHARGE_ORDER_STATE_ID,
     ErrorCode,
     INTERNAL_CHAIN_RW_ACCOUNT_TYPE,
     ExternalChainName,
     ExternalTransStateID,
-    InternalChainName,
     RECHARGE_TYPE,
-} from "@cot/core";
+} from "@bnqkl/cot-core";
 import { ExternalChainHelper } from "@bnqkl/wallet-sdk";
-import { FindOptionsWhere, In } from "typeorm";
+import type { FindOptionsWhere} from "typeorm";
+import { In } from "typeorm";
 
 @Injectable()
 export class RechargeService {

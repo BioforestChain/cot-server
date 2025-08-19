@@ -1,7 +1,8 @@
 import { redisCore, ResponseError } from "@bnqkl/wallet-sdk";
-import { ErrorCode } from "@cot/core";
-import { createParamDecorator, ExecutionContext } from "@nestjs/common";
-import { VerifyHelper } from "../../helper";
+import { ErrorCode } from "@bnqkl/cot-core";
+import type { ExecutionContext } from "@nestjs/common";
+import { createParamDecorator } from "@nestjs/common";
+import { VerifyHelper } from "../../helper/index.js";
 
 type CurrentLoginOptions = {
     required?: boolean;

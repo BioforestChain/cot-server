@@ -1,5 +1,5 @@
 {
-    "name": "@cot/test",
+    "name": "@bnqkl/cot-test",
     "version": "0.7.3",
     "private": true,
     "description": "cot test",
@@ -8,18 +8,33 @@
         "scripts": [],
         "assets": []
     },
-    "main": "build/src/test-main.js",
-    "type": "commonjs",
+    "type": "module",
+    "exports": {
+        ".": "./build/src/test-main.js"
+    },
     "keywords": [
         "cot",
         "test"
     ],
-    "author": "wzx",
+    "author": "wzx,Gaubee",
     "license": "MIT",
     "files": [
         "build"
     ],
     "dependencies": {
-        "@bfmeta/transaction-maker-api": "^1.1.11"
+        "@bfmeta/node-sdk": "^5.1.0",
+        "@bfmeta/sign-util": "^2.1.1",
+        "@bfmeta/transaction-maker-api": "^1.1.11",
+        "@bfmeta/wallet-bsc": "^2.0.2",
+        "@bfmeta/wallet-eth": "^2.0.2",
+        "@bfmeta/wallet-tron": "^2.0.2",
+        "@bnqkl/cot-core": "workspace:^",
+        "@bnqkl/cot-server": "workspace:^",
+        "@bnqkl/server-util": "^2.0.0",
+        "@nestjs/common": "^10.4.20",
+        "@nestjs/core": "^10.4.20",
+        "@nestjs/typeorm": "^10.0.2",
+        "ethers": "^6.15.0",
+        "js-sha256": "^0.9.0"
     }
 }

@@ -6,7 +6,7 @@ import {
     WALLET_BSC_API_REQUEST,
     WALLET_ETH_API_REQUEST,
     WALLET_TRON_API_REQUEST,
-} from "@cot/server";
+} from "@bnqkl/cot-server";
 
 export class TransApi {
     /**

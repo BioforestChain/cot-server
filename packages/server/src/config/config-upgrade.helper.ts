@@ -1,5 +1,5 @@
 import { Logger } from "@bnqkl/wallet-sdk";
-import { staticConfig, staticConfigFactory } from "./static-config";
+import { staticConfig, staticConfigFactory } from "./static-config.js";
 
 /** 版本信息 */
 export interface VersionInfo {
@@ -46,12 +46,12 @@ export class ConfigUpgradeHelper {
         for (const { versionInfo, method } of this.__versionsArray) {
             if (version === undefined || version < versionInfo.version) {
                 Logger.info(`配置文件当前版本号为 ${version}, 正在更新 ${versionInfo.version}`);
-                if (!this[method]) {
+                if (!(this as any)[method]) {
                     const msg = `没有找到更新函数 ${method}`;
                     Logger.warn(msg);
                     throw msg;
                 }
-                this[method]();
+                (this as any)[method]();
                 // 更新配置文件
                 version = staticConfig.version = versionInfo.version;
                 staticConfigFactory.setConfig(staticConfig, true);

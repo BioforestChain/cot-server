@@ -1,8 +1,8 @@
-import { RECHARGE_ORDER_STATE_ID } from "@cot/core";
+import { RECHARGE_ORDER_STATE_ID } from "@bnqkl/cot-core";
 import { Injectable } from "@nestjs/common";
 import { Logger } from "@bnqkl/wallet-sdk";
-import { RechargeOrderObj } from "../../recharge-order-obj";
-import { RechargeOrderFinallyState } from "../recharge-order-finally.state";
+import type { RechargeOrderObj } from "../../recharge-order-obj.js";
+import { RechargeOrderFinallyState } from "../recharge-order-finally.state.js";
 
 /**外链上链失败状态 */
 @Injectable()

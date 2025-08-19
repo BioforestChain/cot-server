@@ -1,5 +1,5 @@
-import { RECHARGE_ORDER_STATE_ID, RECHARGE_RECORD_STATE } from "./constants";
-import type {} from "../external-chain";
+import { RECHARGE_ORDER_STATE_ID, RECHARGE_RECORD_STATE } from "./constants.js";
+import type {} from "../external-chain/index.js";
 import { ExternalAssetType, ExternalChainName, InternalAssetType, InternalChainName } from "@bnqkl/wallet-typings";
 export {};
 declare global {

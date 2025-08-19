@@ -1,1 +1,1 @@
-import type {} from "@cot/server";
+import type {} from "@bnqkl/cot-server";

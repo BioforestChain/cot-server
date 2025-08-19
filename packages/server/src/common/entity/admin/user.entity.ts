@@ -1,26 +1,27 @@
-import { Column, Entity, DataSource } from "typeorm";
+import type { DataSource } from "typeorm";
+import { Column, Entity } from "typeorm";
 import { Injectable } from "@nestjs/common";
 import { BaseEntity, BaseRepository } from "@bnqkl/wallet-sdk";
-import { USER_ROLE } from "@cot/core";
+import type { USER_ROLE } from "@bnqkl/cot-core";
 
 @Entity("user")
 export class UserEntity extends BaseEntity {
     @Column({ name: "login_name", comment: "登录名称" })
-    loginName: string;
+    loginName!: string;
     @Column({ name: "password", comment: "密码" })
-    password: string;
+    password!: string;
     @Column({ name: "nick_name", comment: "昵称" })
-    nickName: string;
+    nickName!: string;
     @Column({ name: "mobile", comment: "手机号" })
-    mobile: string;
+    mobile!: string;
     @Column({ name: "email", comment: "电子邮箱" })
-    email: string;
+    email!: string;
     @Column({ name: "login_time", type: "datetime", comment: "登录时间" })
-    loginTime: Date;
+    loginTime!: Date;
     @Column({ name: "status", type: "int", comment: "状态(0:停用,1:启用)" })
-    status: number;
+    status!: number;
     @Column({ name: "role", type: "int", comment: "权限角色" })
-    role: USER_ROLE;
+    role!: USER_ROLE;
 }
 
 @Injectable()

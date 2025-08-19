@@ -1,7 +1,7 @@
-import { $asyncAllNoNullMap, GLOBAL_PREFIX, NetWorkHelper, WALLET_GLOBAL_PREFIX, bfmetaSignUtil, staticConfig } from "@cot/server";
-import { CommonApi } from "../api/common.api";
-import { SECRETS } from "../constant";
-import { BaseHelper } from "../helper";
+import { $asyncAllNoNullMap, GLOBAL_PREFIX, NetWorkHelper, WALLET_GLOBAL_PREFIX, bfmetaSignUtil, staticConfig } from "@bnqkl/cot-server";
+import { CommonApi } from "../api/common.api.js";
+import { SECRETS } from "../constant.js";
+import { BaseHelper } from "../helper/index.js";
 
 export abstract class CommonTest {
     /**已登录用户集合 */

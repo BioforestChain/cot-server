@@ -1,5 +1,5 @@
-import { RECHARGE_RECORD_STATE, RECHARGE_ORDER_STATE_ID } from "@cot/core";
-import { RECHARGE_DEV_TEST_KEY } from "../common";
+import { RECHARGE_RECORD_STATE, RECHARGE_ORDER_STATE_ID } from "@bnqkl/cot-core";
+import { RECHARGE_DEV_TEST_KEY } from "../common/index.js";
 import { compareTwoStrLowerCase, InternalAssetType, InternalChainName, redisCore, TOKEN_TO_BEN } from "@bnqkl/wallet-sdk";
 
 export class RechargeHelper {

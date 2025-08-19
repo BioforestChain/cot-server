@@ -2,13 +2,14 @@ import * as bip39 from "bip39";
 import { Injectable } from "@nestjs/common";
 import { plainToClass } from "class-transformer";
 import { validate } from "class-validator";
-import { GlobalValueRedisBaseRepository, InternalChainName, Logger } from "@bnqkl/wallet-sdk";
-import { BFMBusinessConfig } from "../memory/memory.define";
-import { OrderHelper, bfmetaSignUtil, ipcHelpers, walletSdk, walletServerSdk } from "../../helper";
+import type { InternalChainName} from "@bnqkl/wallet-sdk";
+import { GlobalValueRedisBaseRepository, Logger } from "@bnqkl/wallet-sdk";
+import { BFMBusinessConfig } from "../memory/memory.define.js";
+import { OrderHelper, bfmetaSignUtil, ipcHelpers, walletSdk, walletServerSdk } from "../../helper/index.js";
 import * as ethers from "ethers";
 import { EasyMap } from "@bnqkl/util-node";
-import { ExternalAssetType, ExternalChainName, INTERNAL_CHAIN_RW_ACCOUNT_TYPE } from "@cot/core";
-import { CMD, GLOBAL_VALUE_ENTITY_ID, WORKER } from "../../common";
+import { ExternalAssetType, ExternalChainName, INTERNAL_CHAIN_RW_ACCOUNT_TYPE } from "@bnqkl/cot-core";
+import { CMD, GLOBAL_VALUE_ENTITY_ID, WORKER } from "../../common/index.js";
 
 /**全局的Redis数据操作模型 */
 @Injectable()
@@ -39,7 +40,7 @@ export class GlobalValueRedisRepository extends GlobalValueRedisBaseRepository<C
                     });
                     item.logo = info.iconUrl;
                     for (const _chain in item.supportChain) {
-                        const externalItem = item.supportChain[_chain] as COTCore.Config.ExternalAssetInfoItem;
+                        const externalItem = item.supportChain[_chain as keyof typeof item.supportChain]!
                         if (externalItem.contract) {
                             const contractTokenInfo = await OrderHelper.getContractTokenInfo(_chain as ExternalChainName, externalItem.contract);
                             externalItem.assetType = contractTokenInfo.symbol;

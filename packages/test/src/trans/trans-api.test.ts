@@ -12,11 +12,11 @@ import {
     DEFAULT_FEE,
     CHAIN_NETWORK_TYPE,
     staticConfig,
-} from "@cot/server";
-import { TransApi } from "../api/trans.api";
-import { CommonTest } from "../common/common.test";
+} from "@bnqkl/cot-server";
+import { TransApi } from "../api/trans.api.js";
+import { CommonTest } from "../common/common.test.js";
 import { BSC_TEST_USDT_ADDRESS } from "@bfmeta/wallet-bsc";
-import { GENESIS_SECRET } from "../constant";
+import { GENESIS_SECRET } from "../constant.js";
 
 @Injectable()
 export class TransApiTest extends CommonTest {

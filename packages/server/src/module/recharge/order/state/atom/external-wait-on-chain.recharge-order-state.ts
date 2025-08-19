@@ -1,9 +1,9 @@
-import { RECHARGE_ORDER_STATE_ID } from "@cot/core";
+import { RECHARGE_ORDER_STATE_ID } from "@bnqkl/cot-core";
 import { Injectable } from "@nestjs/common";
 import { Logger } from "@bnqkl/wallet-sdk";
-import { RechargeHelper, walletServerSdk } from "../../../../../helper";
-import { RechargeOrderObj } from "../../recharge-order-obj";
-import { RechargeOrderPendingState } from "../recharge-order-pending.state";
+import { RechargeHelper, walletServerSdk } from "../../../../../helper/index.js";
+import type { RechargeOrderObj } from "../../recharge-order-obj.js";
+import { RechargeOrderPendingState } from "../recharge-order-pending.state.js";
 
 /**等待外链上链状态 */
 @Injectable()

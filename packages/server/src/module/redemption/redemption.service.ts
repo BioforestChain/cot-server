@@ -1,12 +1,14 @@
-import { REDEMPTION_ORDER_STATE_ID, ExternalAssetType, InternalChainName, InternalTransStateID, REDEMPTION_TYPE } from "@cot/core";
+import type { InternalChainName} from "@bnqkl/cot-core";
+import { REDEMPTION_ORDER_STATE_ID, ExternalAssetType, InternalTransStateID, REDEMPTION_TYPE } from "@bnqkl/cot-core";
 import { forwardRef, Inject, Injectable } from "@nestjs/common";
-import { $asyncAllNoNullMap, ExternalChainHelper, BCF_DEFAULT_DECIMALS, Logger, InternalAssetType, JSBIHelper, ExternalChainName } from "@bnqkl/wallet-sdk";
-import { RedemptionOrder, LOCAL_MQ_ID, ORDER_TYPE, TRANSACTION_LINK_TYPE } from "../../common";
-import { GlobalValueRedisRepository } from "../redis/global-value.redis-repository";
-import { RedemptionRecordsReqDto, RedemptionV2ReqDto } from "./dto";
-import { RedemptionOrderRepository } from "./redemption.repository";
-import { VerifyHelper, OrderHelper, RedemptionHelper, RechargeHelper, walletServerSdk } from "../../helper";
-import { MemoryService } from "../memory/memory.service";
+import type { InternalAssetType} from "@bnqkl/wallet-sdk";
+import { $asyncAllNoNullMap, ExternalChainHelper, BCF_DEFAULT_DECIMALS, Logger, JSBIHelper, ExternalChainName } from "@bnqkl/wallet-sdk";
+import { RedemptionOrder, LOCAL_MQ_ID, ORDER_TYPE, TRANSACTION_LINK_TYPE } from "../../common/index.js";
+import { GlobalValueRedisRepository } from "../redis/global-value.redis-repository.js";
+import type { RedemptionRecordsReqDto, RedemptionV2ReqDto } from "./dto/index.js";
+import { RedemptionOrderRepository } from "./redemption.repository.js";
+import { VerifyHelper, OrderHelper, RedemptionHelper, RechargeHelper, walletServerSdk } from "../../helper/index.js";
+import { MemoryService } from "../memory/memory.service.js";
 
 @Injectable()
 export class RedemptionService {

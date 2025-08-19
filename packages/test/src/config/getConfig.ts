@@ -1,6 +1,6 @@
-import { bfmetaSignUtil } from "@cot/server";
-import { HttpHelper } from "../httpHelper";
-import { getConfig } from "./api";
+import { bfmetaSignUtil } from "@bnqkl/cot-server";
+import { HttpHelper } from "../httpHelper.js";
+import { getConfig } from "./api.js";
 
 (async () => {
     try {

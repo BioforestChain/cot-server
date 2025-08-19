@@ -1,10 +1,10 @@
-import { HttpHelper } from "../httpHelper";
-import { setConfig } from "./api";
+import { HttpHelper } from "../httpHelper.js";
+import { setConfig } from "./api.js";
 import { ETH_SEPOLIA_TEST_LINK_ADDRESS } from "@bfmeta/wallet-eth";
 import { BSC_TEST_USDT_ADDRESS } from "@bfmeta/wallet-bsc";
 import { TRON_TEST_USDT_ADDRESS_HEX } from "@bfmeta/wallet-tron";
 
-import { bfmetaSignUtil, ExternalChainName, timeTool, InternalChainName, InternalAssetType } from "@cot/server";
+import { bfmetaSignUtil, ExternalChainName, timeTool, InternalChainName, InternalAssetType } from "@bnqkl/cot-server";
 
 (async () => {
     try {

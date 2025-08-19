@@ -1,10 +1,10 @@
-import { RECHARGE_ORDER_STATE_ID } from "@cot/core";
+import { RECHARGE_ORDER_STATE_ID } from "@bnqkl/cot-core";
 import { Injectable } from "@nestjs/common";
 import { Logger } from "@bnqkl/wallet-sdk";
-import { ORDER_QUEUE_ROUTING_KEY } from "../../../../../common";
-import { RechargeOrderObj } from "../../recharge-order-obj";
-import { RechargeOrderFinallyState } from "../recharge-order-finally.state";
-import { businessPublisher } from "../../../../mq";
+import { ORDER_QUEUE_ROUTING_KEY } from "../../../../../common/index.js";
+import type { RechargeOrderObj } from "../../recharge-order-obj.js";
+import { RechargeOrderFinallyState } from "../recharge-order-finally.state.js";
+import { businessPublisher } from "../../../../mq/index.js";
 
 /**成功状态 */
 @Injectable()

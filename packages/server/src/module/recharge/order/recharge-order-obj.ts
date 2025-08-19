@@ -1,9 +1,9 @@
-import { INTERNAL_CHAIN_RW_ACCOUNT_TYPE, RECHARGE_ORDER_STATE_ID } from "@cot/core";
-import { RechargeOrder } from "../../../common";
+import type { INTERNAL_CHAIN_RW_ACCOUNT_TYPE, RECHARGE_ORDER_STATE_ID } from "@bnqkl/cot-core";
+import type { RechargeOrder } from "../../../common/index.js";
 import { INTERNAL_TRANS_RETRY_MAX_NUM, Logger, OrderObj } from "@bnqkl/wallet-sdk";
-import { RechargeOrderRepository } from "../recharge.repository";
-import { RechargeOrderMgr } from "./recharge-order-mgr";
-import { RechargeOrderState } from "./state";
+import type { RechargeOrderRepository } from "../recharge.repository.js";
+import type { RechargeOrderMgr } from "./recharge-order-mgr.js";
+import type { RechargeOrderState } from "./state/index.js";
 
 /**充值订单的逻辑对象 */
 export class RechargeOrderObj extends OrderObj<RECHARGE_ORDER_STATE_ID, RechargeOrderState, RechargeOrder> implements COTServer.Recharge.OrderObj {

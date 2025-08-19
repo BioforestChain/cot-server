@@ -1,5 +1,5 @@
-import { NetWorkHelper, staticConfig } from "@cot/server";
-import { AdminApi } from "./api";
+import { NetWorkHelper, staticConfig } from "@bnqkl/cot-server";
+import { AdminApi } from "./api.js";
 import { EncryptHelper } from "@bnqkl/server-util";
 import * as crypto from "crypto";
 
@@ -7,7 +7,7 @@ import { ETH_SEPOLIA_TEST_LINK_ADDRESS } from "@bfmeta/wallet-eth";
 import { BSC_TEST_USDT_ADDRESS } from "@bfmeta/wallet-bsc";
 import { TRON_TEST_USDT_ADDRESS_HEX } from "@bfmeta/wallet-tron";
 
-import { bfmetaSignUtil, ExternalChainName, timeTool, InternalChainName, InternalAssetType } from "@cot/server";
+import { bfmetaSignUtil, ExternalChainName, timeTool, InternalChainName, InternalAssetType } from "@bnqkl/cot-server";
 
 (async () => {
     try {

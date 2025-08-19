@@ -1,6 +1,6 @@
 import { EncryptHelper } from "@bnqkl/server-util";
-import { NetWorkHelper, staticConfig } from "@cot/server";
-import { AdminApi } from "./api";
+import { NetWorkHelper, staticConfig } from "@bnqkl/cot-server";
+import { AdminApi } from "./api.js";
 import * as crypto from "crypto";
 (async () => {
     try {

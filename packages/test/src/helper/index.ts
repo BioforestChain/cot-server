@@ -1,1 +1,1 @@
-export * from "./base.helper";
+export * from "./base.helper.js";

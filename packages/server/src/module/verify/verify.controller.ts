@@ -1,16 +1,17 @@
 import { Body, Controller, Get, Post, Inject, forwardRef } from "@nestjs/common";
 import { ApiOkResponse, ApiOperation, ApiTags } from "@nestjs/swagger";
-import { GlobalValueRedisRepository } from "../redis/global-value.redis-repository";
-import { MemoryService } from "../memory/memory.service";
-import {
-    PaymentGetBusinessConfigResDto,
+import { GlobalValueRedisRepository } from "../redis/global-value.redis-repository.js";
+import { MemoryService } from "../memory/memory.service.js";
+import type {
     PaymentSetBusinessConfigReqDto,
     PaymentInjectAddressReqDto,
-    PaymentGetInjectAddressResDto,
-    PaymentInjectExternalAddressReqDto,
-} from "./dto";
-import { PaymentGetBusinessConfigReqDto } from "./dto/payment-get-config-req.dto";
-import { COT_VERIFY_API_REQUEST } from "@cot/core";
+    PaymentInjectExternalAddressReqDto} from "./dto/index.js";
+import {
+    PaymentGetBusinessConfigResDto,
+    PaymentGetInjectAddressResDto
+} from "./dto/index.js";
+import type { PaymentGetBusinessConfigReqDto } from "./dto/payment-get-config-req.dto.js";
+import { COT_VERIFY_API_REQUEST } from "@bnqkl/cot-core";
 
 @ApiTags("VERIFY")
 @Controller()

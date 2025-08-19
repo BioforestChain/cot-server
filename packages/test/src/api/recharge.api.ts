@@ -1,4 +1,4 @@
-import { COT_RECHARGE_API_REQUEST, NetWorkHelper } from "@cot/server";
+import { COT_RECHARGE_API_REQUEST, NetWorkHelper } from "@bnqkl/cot-server";
 
 export class RechargeApi {
     /**

@@ -1,4 +1,5 @@
-import { CronCommand, CronJob } from "cron";
+import type { CronCommand} from "cron";
+import { CronJob } from "cron";
 
 export class $CronJob extends CronJob {
     //设置默认时区为上海

@@ -1,6 +1,6 @@
-import { ErrorCode, CHAIN_ID, ExternalChainName, VERIFY_EXPIRE_TIME } from "@cot/core";
+import { ErrorCode, CHAIN_ID, ExternalChainName, VERIFY_EXPIRE_TIME } from "@bnqkl/cot-core";
 import { compareTwoStrLowerCase, $noNullMap, Logger, ResponseError } from "@bnqkl/wallet-sdk";
-import { internalChainHelper, externalChainHelper, bfmetaSignUtil } from "./wallet-server-sdk";
+import { internalChainHelper, externalChainHelper, bfmetaSignUtil } from "./wallet-server-sdk.js";
 
 export class VerifyHelper {
     /**获取token的key */

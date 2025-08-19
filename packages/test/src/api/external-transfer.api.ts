@@ -1,6 +1,6 @@
-import { TransApi } from "./trans.api";
+import { TransApi } from "./trans.api.js";
 import * as ethers from "ethers";
-import { $asyncAllNoNullMap, $asyncNoNullMap, ExternalTransType, Logger, NetWorkHelper, walletSdk } from "@cot/server";
+import { $asyncAllNoNullMap, $asyncNoNullMap, ExternalTransType, Logger, NetWorkHelper, walletSdk } from "@bnqkl/cot-server";
 
 export class ExternalTransferApi {
     /**

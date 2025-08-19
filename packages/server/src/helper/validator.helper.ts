@@ -1,6 +1,7 @@
 import { InternalAssetType, InternalChainName, Logger, timeTool } from "@bnqkl/wallet-sdk";
-import { ValidatorConstraintInterface, ValidationArguments, isArray, isString, isNumber, ValidatorConstraint, isObject } from "class-validator";
-import { externalChainHelper, internalChainHelper } from "../helper";
+import type { ValidatorConstraintInterface, ValidationArguments} from "class-validator";
+import { isArray, isString, isNumber, ValidatorConstraint, isObject } from "class-validator";
+import { externalChainHelper, internalChainHelper } from "../helper/index.js";
 @ValidatorConstraint({ name: "IsStringOrNumber", async: false })
 export class IsStringOrNumber implements ValidatorConstraintInterface {
     validate(value: any, validationArguments?: ValidationArguments) {
@@ -179,11 +180,11 @@ export class IsDateLaterThanNow implements ValidatorConstraintInterface {
 export class RechargeClassVerify implements ValidatorConstraintInterface {
     async validate(value: COTCore.Config.RechargeObject, validationArguments?: ValidationArguments) {
         for (const chainName in value) {
-            if (!InternalChainName[chainName]) {
+            if (!InternalChainName[chainName as keyof typeof InternalChainName]) {
                 return false;
             }
             for (const assetType in value[chainName]) {
-                if (!InternalAssetType[assetType]) {
+                if (!InternalAssetType[assetType as keyof typeof InternalAssetType]) {
                     return false;
                 }
                 const item = value[chainName][assetType];

@@ -1,7 +1,7 @@
 import * as http from "node:http";
 import * as url from "node:url";
 import { IncomingMessage } from "node:http";
-import { staticConfig } from "@cot/server";
+import { staticConfig } from "@bnqkl/cot-server";
 
 type SuccessReturn<T> = {
     success: true;

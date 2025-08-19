@@ -1,9 +1,9 @@
 import { Controller, forwardRef, Get, Inject, Query, Post, Body } from "@nestjs/common";
 import { ApiOperation, ApiTags } from "@nestjs/swagger";
-import { AdminAuthorization } from "../../../common";
-import { GlobalValueRedisRepository } from "../../redis";
-import { RechargeClassDefine } from "../dto/config.dto";
-import { ConfigService } from "./config.service";
+import { AdminAuthorization } from "../../../common/index.js";
+import { GlobalValueRedisRepository } from "../../redis/index.js";
+import type { RechargeClassDefine } from "../dto/config.dto.js";
+import { ConfigService } from "./config.service.js";
 
 @ApiTags("ADMIN/CONFIG")
 @Controller("admin/config")

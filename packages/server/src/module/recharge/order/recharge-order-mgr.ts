@@ -1,26 +1,29 @@
 import { forwardRef, Inject, Injectable } from "@nestjs/common";
+import type {
+    RechargeOrderState} from "./state/index.js";
 import {
     Success_RechargeOrderState,
     InternalOnChainFail_RechargeOrderState,
     InternalWaitOnChain_RechargeOrderState,
     ExternalWaitOnChain_RechargeOrderState,
-    ExternalOnChainFail_RechargeOrderState,
-    RechargeOrderState,
-} from "./state";
-import { RechargeOrderObj } from "./recharge-order-obj";
-import { RechargeOrderRepository } from "../recharge.repository";
-import { FindOptionsWhere, In } from "typeorm";
-import { RECHARGE_ORDER_STATE_ID, RECHARGE_TYPE } from "@cot/core";
-import { ORDER_TYPE, ORDER_QUEUE_ROUTING_KEY, ORDER_TEMP_QUEUE_ROUTING_KEY, RechargeOrder } from "../../../common";
+    ExternalOnChainFail_RechargeOrderState
+} from "./state/index.js";
+import { RechargeOrderObj } from "./recharge-order-obj.js";
+import { RechargeOrderRepository } from "../recharge.repository.js";
+import type { FindOptionsWhere} from "typeorm";
+import { In } from "typeorm";
+import { RECHARGE_ORDER_STATE_ID, RECHARGE_TYPE } from "@bnqkl/cot-core";
+import type { RechargeOrder } from "../../../common/index.js";
+import { ORDER_TYPE, ORDER_QUEUE_ROUTING_KEY, ORDER_TEMP_QUEUE_ROUTING_KEY } from "../../../common/index.js";
 import { ChainHelper, CommonHelper, InternalAssetType, InternalMainAssetType, Logger, OrderMgr } from "@bnqkl/wallet-sdk";
-import { GlobalValueRedisRepository } from "../../redis/global-value.redis-repository";
-import { businessConsumer, businessPublisher } from "../../mq";
+import { GlobalValueRedisRepository } from "../../redis/global-value.redis-repository.js";
+import { businessConsumer, businessPublisher } from "../../mq/index.js";
 
 /**充值订单管理器 */
 @Injectable()
 export class RechargeOrderMgr extends OrderMgr<RECHARGE_ORDER_STATE_ID, RechargeOrderState, RechargeOrder, RechargeOrderObj, ORDER_TYPE> {
     @Inject(forwardRef(() => RechargeOrderRepository))
-    public readonly repository: RechargeOrderRepository;
+    public readonly repository!: RechargeOrderRepository;
     @Inject(forwardRef(() => ExternalWaitOnChain_RechargeOrderState))
     private __externalWaitOnChain_RechargeOrderState!: ExternalWaitOnChain_RechargeOrderState;
     @Inject(forwardRef(() => ExternalOnChainFail_RechargeOrderState))

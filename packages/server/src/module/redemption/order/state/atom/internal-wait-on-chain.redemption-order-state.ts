@@ -1,8 +1,8 @@
-import { REDEMPTION_ORDER_STATE_ID } from "@cot/core";
+import { REDEMPTION_ORDER_STATE_ID } from "@bnqkl/cot-core";
 import { Injectable } from "@nestjs/common";
-import { walletServerSdk } from "../../../../../helper";
-import { RedemptionOrderObj } from "../../redemption-order-obj";
-import { RedemptionOrderPendingState } from "../redemption-order-pending.state";
+import { walletServerSdk } from "../../../../../helper/index.js";
+import type { RedemptionOrderObj } from "../../redemption-order-obj.js";
+import { RedemptionOrderPendingState } from "../redemption-order-pending.state.js";
 
 /**等待内链上链状态 */
 @Injectable()

@@ -1,20 +1,22 @@
 {
-    "name": "@cot/core",
+    "name": "@bnqkl/cot-core",
     "version": "0.7.3",
     "description": "cot core",
-    "main": "build/src/index.js",
-    "type": "commonjs",
+    "exports": {
+        ".": "./build/index.js"
+    },
+    "type": "module",
     "keywords": [
         "cot",
         "core"
     ],
-    "author": "wzx",
+    "author": "wzx,Gaubee",
     "license": "MIT",
     "files": [
         "build"
     ],
     "dependencies": {
-        "@bnqkl/wallet-typings": "^0.23.1"
+        "@bnqkl/wallet-typings": "^2.0.0"
     },
     "gitHead": "b9f2d01c7fd83e50903532b0d0c0f9fbca8c4f07"
 }

@@ -1,14 +1,14 @@
 import { Body, Controller, forwardRef, Get, Inject, Post, Query } from "@nestjs/common";
 import { ApiOperation, ApiTags } from "@nestjs/swagger";
-import {
+import type {
     RedemptionRecordDetailReqDto,
     RedemptionRecordsReqDto,
     RedemptionRetryExternalOnChainReqDto,
     RedemptionRetryInternalOnChainReqDto,
     RedemptionV2ReqDto,
-} from "./dto";
-import { RedemptionService } from "./redemption.service";
-import { COT_REDEMPTION_API_REQUEST } from "@cot/core";
+} from "./dto/index.js";
+import { RedemptionService } from "./redemption.service.js";
+import { COT_REDEMPTION_API_REQUEST } from "@bnqkl/cot-core";
 
 @ApiTags("REDEMPTION")
 @Controller()

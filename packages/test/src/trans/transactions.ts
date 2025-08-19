@@ -1,6 +1,6 @@
 import { Injectable } from "@nestjs/common";
-import { walletSdk, InternalChainName, staticConfig, NetWorkHelper, transactionMaker } from "@cot/server";
-import { TransApi } from "../api/trans.api";
+import { walletSdk, InternalChainName, staticConfig, NetWorkHelper, transactionMaker } from "@bnqkl/cot-server";
+import { TransApi } from "../api/trans.api.js";
 import * as fs from "fs";
 const accounts: { secret: string; address: string }[] = require(process.cwd() + "/accounts.json");
 @Injectable()

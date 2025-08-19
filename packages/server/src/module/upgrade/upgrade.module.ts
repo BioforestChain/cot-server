@@ -1,6 +1,6 @@
 import { forwardRef, Module } from "@nestjs/common";
-import { RedisModule } from "../redis/redis.module";
-import { UpgradeService } from "./upgrade.service";
+import { RedisModule } from "../redis/redis.module.js";
+import { UpgradeService } from "./upgrade.service.js";
 
 @Module({
     imports: [forwardRef(() => RedisModule)],

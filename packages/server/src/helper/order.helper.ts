@@ -1,16 +1,17 @@
+import type {
+    InternalChainName} from "@bnqkl/wallet-sdk";
 import {
     ChainHelper,
     ExternalChainName,
     ExternalTransStateID,
     InternalAssetType,
-    InternalChainName,
     InternalMainAssetType,
     Logger,
     memTimeCache,
     MEM_TIME_CACHE_STRATEGY,
 } from "@bnqkl/wallet-sdk";
-import { CMD, WORKER } from "../common";
-import { externalChainHelper, internalChainHelper, ipcHelpers, walletServerSdk } from "../helper";
+import { CMD, WORKER } from "../common/index.js";
+import { externalChainHelper, internalChainHelper, ipcHelpers, walletServerSdk } from "../helper/index.js";
 
 export class OrderHelper {
     /**

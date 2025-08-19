@@ -1,6 +1,11 @@
-import { bfmetaSignUtil, walletSdk } from "@cot/server";
-import { GENESIS_SECRET, SECRETS } from "../constant";
-import { CryptoHelper } from "@bfmeta/node-sdk/build/test/helpers/cryptoHelper";
+import { bfmetaSignUtil, walletSdk } from "@bnqkl/cot-server";
+import { GENESIS_SECRET, SECRETS } from "../constant.js";
+// import { CryptoHelper } from "@bfmeta/node-sdk";
+import path from "node:path";
+import { pathToFileURL } from "node:url";
+const nodeSdk = import.meta.resolve("@bfmeta/node-sdk");
+const {CryptoHelper} = await import( pathToFileURL( path.resolve(nodeSdk,'../../','test/helpers/cryptoHelper.js')).href);
+
 (async () => {
     const info = await bfmetaSignUtil.createKeypair("test_usdt");
     const zzz = info.publicKey.toString("hex");

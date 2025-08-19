@@ -1,14 +1,15 @@
 import { Controller, Get, Post, Body, Inject } from "@nestjs/common";
-import { UserService } from "./user.service";
+import { UserService } from "./user.service.js";
 import { ApiOkResponse, ApiOperation, ApiTags } from "@nestjs/swagger";
-import { UserLoginReqDto, UserLoginResDto, CreateUserReqDto, UpdateUserReqDto, GetOperateRecordListReqDto } from "../dto/user.dto";
-import { AdminAuthorization } from "../../../common";
+import type { UserLoginReqDto, CreateUserReqDto, UpdateUserReqDto, GetOperateRecordListReqDto } from "../dto/user.dto.js";
+import { UserLoginResDto } from "../dto/user.dto.js";
+import { AdminAuthorization } from "../../../common/index.js";
 
 @ApiTags("ADMIN/USER")
 @Controller("/admin/user")
 export class UserController {
     @Inject(UserService)
-    private __userService: UserService;
+    private __userService!: UserService;
 
     @Post("create")
     @ApiOperation({ summary: "admin-创建用户" })

@@ -9,14 +9,14 @@ import {
     INTERNAL_TRANS_RETRY_INVERVAL,
     INTERNAL_TRANS_RETRY_MAX_NUM,
 } from "@bnqkl/wallet-sdk";
-import { GLOBAL_VALUE_ENTITY_ID, LOCAL_MQ_ID, ORDER_TEMP_QUEUE_ROUTING_KEY, RECHARGE_HKEY, TRANSACTION_LINK_TYPE } from "../../../../../common";
-import { OrderHelper, RechargeHelper, walletServerSdk } from "../../../../../helper";
-import { MemoryService } from "../../../../../module/memory/memory.service";
-import { RechargeOrderObj } from "../../recharge-order-obj";
-import { INTERNAL_CHAIN_RW_ACCOUNT_TYPE, RECHARGE_ORDER_STATE_ID, RECHARGE_TYPE } from "@cot/core";
-import { businessPublisher } from "../../../../mq";
-import { RechargeOrderPendingState } from "../recharge-order-pending.state";
-import { GlobalValueRedisRepository } from "../../../../redis";
+import { GLOBAL_VALUE_ENTITY_ID, LOCAL_MQ_ID, ORDER_TEMP_QUEUE_ROUTING_KEY, RECHARGE_HKEY, TRANSACTION_LINK_TYPE } from "../../../../../common/index.js";
+import { OrderHelper, RechargeHelper, walletServerSdk } from "../../../../../helper/index.js";
+import { MemoryService } from "../../../../../module/memory/memory.service.js";
+import type { RechargeOrderObj } from "../../recharge-order-obj.js";
+import { INTERNAL_CHAIN_RW_ACCOUNT_TYPE, RECHARGE_ORDER_STATE_ID, RECHARGE_TYPE } from "@bnqkl/cot-core";
+import { businessPublisher } from "../../../../mq/index.js";
+import { RechargeOrderPendingState } from "../recharge-order-pending.state.js";
+import { GlobalValueRedisRepository } from "../../../../redis/index.js";
 
 /**等待内链上链状态 */
 @Injectable()

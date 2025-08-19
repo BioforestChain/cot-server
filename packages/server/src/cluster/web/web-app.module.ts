@@ -1,12 +1,13 @@
-import { MiddlewareConsumer, Module, NestModule } from "@nestjs/common";
-import { mysqlConfig } from "../../common";
-import { WebApp } from "./web.app";
+import type { MiddlewareConsumer, NestModule } from "@nestjs/common";
+import { Module } from "@nestjs/common";
+import { mysqlConfig } from "../../common/index.js";
+import { WebApp } from "./web.app.js";
 import { TypeOrmModule } from "@nestjs/typeorm";
-import { RechargeModule } from "../../module/recharge/recharge.module";
-import { VerifyModule } from "../../module/verify/verify.module";
-import { RedisModule } from "../../module/redis/redis.module";
-import { RedemptionModule } from "../../module/redemption/redemption.module";
-import { AdminModule } from "../../module/admin/admin.module";
+import { RechargeModule } from "../../module/recharge/recharge.module.js";
+import { VerifyModule } from "../../module/verify/verify.module.js";
+import { RedisModule } from "../../module/redis/redis.module.js";
+import { RedemptionModule } from "../../module/redemption/redemption.module.js";
+import { AdminModule } from "../../module/admin/admin.module.js";
 import { HttpRequestMiddleware, RedisBaseModule } from "@bnqkl/wallet-sdk";
 
 @Module({

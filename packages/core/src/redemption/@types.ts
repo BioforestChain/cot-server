@@ -1,5 +1,5 @@
 import { ExternalAssetType, ExternalChainName, InternalChainName } from "@bnqkl/wallet-typings";
-import { REDEMPTION_ORDER_STATE_ID, REDEMPTION_RECORD_STATE } from "./constants";
+import { REDEMPTION_ORDER_STATE_ID, REDEMPTION_RECORD_STATE } from "./constants.js";
 
 export {};
 declare global {

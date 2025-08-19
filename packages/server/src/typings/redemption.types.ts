@@ -1,4 +1,4 @@
-import { REDEMPTION_ORDER_STATE_ID } from "@cot/core";
+import type { REDEMPTION_ORDER_STATE_ID } from "@bnqkl/cot-core";
 
 export {};
 declare global {

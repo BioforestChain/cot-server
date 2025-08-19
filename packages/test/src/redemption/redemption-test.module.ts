@@ -1,5 +1,5 @@
 import { Module } from "@nestjs/common";
-import { RedemptionApiTest } from "./redemption-api.test";
+import { RedemptionApiTest } from "./redemption-api.test.js";
 
 @Module({
     imports: [],

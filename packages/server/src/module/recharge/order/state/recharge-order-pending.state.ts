@@ -1,6 +1,6 @@
-import { RECHARGE_ORDER_STATE_ID } from "@cot/core";
-import { RechargeOrderObj } from "../recharge-order-obj";
-import { RechargeOrderState } from "./recharge-order.state";
+import type { RECHARGE_ORDER_STATE_ID } from "@bnqkl/cot-core";
+import type { RechargeOrderObj } from "../recharge-order-obj.js";
+import { RechargeOrderState } from "./recharge-order.state.js";
 
 /**充值订单待处理状态 */
 export abstract class RechargeOrderPendingState extends RechargeOrderState {

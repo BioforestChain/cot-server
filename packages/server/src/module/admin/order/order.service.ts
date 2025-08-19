@@ -1,11 +1,11 @@
-import { FIX_RECHARGE_ORDER_TYPE, FIX_REDEMPTION_ORDER_TYPE } from "@cot/core";
+import { FIX_RECHARGE_ORDER_TYPE, FIX_REDEMPTION_ORDER_TYPE } from "@bnqkl/cot-core";
 import { forwardRef, Inject, Injectable } from "@nestjs/common";
-import { FindOptionsWhere } from "typeorm";
-import { RechargeOrder, RedemptionOrder } from "../../../common";
-import { RechargeOrderRepository } from "../../recharge/recharge.repository";
-import { RechargeService } from "../../recharge/recharge.service";
-import { RedemptionOrderRepository } from "../../redemption/redemption.repository";
-import { RedemptionService } from "../../redemption/redemption.service";
+import type { FindOptionsWhere } from "typeorm";
+import type { RechargeOrder, RedemptionOrder } from "../../../common/index.js";
+import { RechargeOrderRepository } from "../../recharge/recharge.repository.js";
+import { RechargeService } from "../../recharge/recharge.service.js";
+import { RedemptionOrderRepository } from "../../redemption/redemption.repository.js";
+import { RedemptionService } from "../../redemption/redemption.service.js";
 
 @Injectable()
 export class OrderService {

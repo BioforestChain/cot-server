@@ -1,6 +1,6 @@
-import { staticConfig } from "../../config";
-import { BusinessConsumer } from "./business.consumer";
-import { BusinessPublisher } from "./business.publisher";
+import { staticConfig } from "../../config/index.js";
+import { BusinessConsumer } from "./business.consumer.js";
+import { BusinessPublisher } from "./business.publisher.js";
 
 export const businessPublisher = new BusinessPublisher(staticConfig.rabbitMQ.server);
 export const businessConsumer = new BusinessConsumer(staticConfig.rabbitMQ.server);

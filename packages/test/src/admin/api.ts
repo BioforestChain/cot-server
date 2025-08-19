@@ -1,4 +1,4 @@
-import { BasePageData, NetWorkHelper, OperateRecordEntity, RechargeOrder, RedemptionOrder } from "@cot/server";
+import { BasePageData, NetWorkHelper, OperateRecordEntity, RechargeOrder, RedemptionOrder } from "@bnqkl/cot-server";
 
 export class AdminApi {
     static async login(request: COTCore.Api.Admin.User.LoginReqDto, networkHelper: NetWorkHelper) {

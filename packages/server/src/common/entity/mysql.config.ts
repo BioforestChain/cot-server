@@ -1,9 +1,9 @@
-import { TypeOrmModuleAsyncOptions } from "@nestjs/typeorm";
-import { staticConfig } from "../../config";
-import { OperateRecordEntity } from "./admin/operate-record.entity";
-import { UserEntity } from "./admin/user.entity";
-import { RechargeOrder } from "./recharge/recharge-order.entity";
-import { RedemptionOrder } from "./redemption/redemption-order.entity";
+import type { TypeOrmModuleAsyncOptions } from "@nestjs/typeorm";
+import { staticConfig } from "../../config/index.js";
+import { OperateRecordEntity } from "./admin/operate-record.entity.js";
+import { UserEntity } from "./admin/user.entity.js";
+import { RechargeOrder } from "./recharge/recharge-order.entity.js";
+import { RedemptionOrder } from "./redemption/redemption-order.entity.js";
 
 const { host, port, username, password, dbName } = staticConfig.mysql;
 export const mysqlConfig: TypeOrmModuleAsyncOptions = {

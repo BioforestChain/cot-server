@@ -1,6 +1,6 @@
 import { Injectable } from "@nestjs/common";
-import { RedemptionOrder } from "../../common";
-import { DataSource } from "typeorm";
+import { RedemptionOrder } from "../../common/index.js";
+import type { DataSource } from "typeorm";
 import { BaseRepository } from "@bnqkl/wallet-sdk";
 
 @Injectable()

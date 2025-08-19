@@ -1,13 +1,14 @@
 import { InternalAssetType, Logger, rabbitMQCore, sleep, TRANS_QUEUE_ROUTING_KEY } from "@bnqkl/wallet-sdk";
-import { ExternalAssetType, ExternalChainName, InternalChainName, INTERNAL_CHAIN_RW_ACCOUNT_TYPE } from "@cot/core";
-import { forwardRef, Inject, OnModuleInit } from "@nestjs/common";
-import { CMD, LOCAL_MQ_ID, TRANSACTION_LINK_TYPE } from "../../common";
-import { bfmetaSignUtil, ipcHelpers, walletConsumer, walletSdk, walletServerSdk } from "../../helper";
-import { MemoryService } from "../../module/memory/memory.service";
-import { RechargeOrderMgr } from "../../module/recharge/order/recharge-order-mgr";
-import { RedemptionOrderMgr } from "../../module/redemption/order/redemption-order-mgr";
-import { GlobalValueRedisRepository } from "../../module/redis/global-value.redis-repository";
-import { BaseApp } from "../app";
+import { ExternalAssetType, ExternalChainName, InternalChainName, INTERNAL_CHAIN_RW_ACCOUNT_TYPE } from "@bnqkl/cot-core";
+import type { OnModuleInit } from "@nestjs/common";
+import { forwardRef, Inject } from "@nestjs/common";
+import { CMD, LOCAL_MQ_ID, TRANSACTION_LINK_TYPE } from "../../common/index.js";
+import { bfmetaSignUtil, ipcHelpers, walletConsumer, walletSdk, walletServerSdk } from "../../helper/index.js";
+import { MemoryService } from "../../module/memory/memory.service.js";
+import { RechargeOrderMgr } from "../../module/recharge/order/recharge-order-mgr.js";
+import { RedemptionOrderMgr } from "../../module/redemption/order/redemption-order-mgr.js";
+import { GlobalValueRedisRepository } from "../../module/redis/global-value.redis-repository.js";
+import { BaseApp } from "../app.js";
 
 export class OrderApp extends BaseApp implements OnModuleInit {
     @Inject(forwardRef(() => MemoryService))

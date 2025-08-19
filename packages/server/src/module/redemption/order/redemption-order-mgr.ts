@@ -1,25 +1,28 @@
 import { forwardRef, Inject, Injectable } from "@nestjs/common";
 import { Logger, OrderMgr } from "@bnqkl/wallet-sdk";
+import type {
+    RedemptionOrderState} from "./state/index.js";
 import {
     Success_RedemptionOrderState,
     InternalOnChainFail_RedemptionOrderState,
     InternalWaitOnChain_RedemptionOrderState,
     ExternalWaitOnChain_RedemptionOrderState,
-    ExternalOnChainFail_RedemptionOrderState,
-    RedemptionOrderState,
-} from "./state";
-import { RedemptionOrderObj } from "./redemption-order-obj";
-import { ORDER_QUEUE_ROUTING_KEY, ORDER_TEMP_QUEUE_ROUTING_KEY, ORDER_TYPE, RedemptionOrder } from "../../../common";
-import { RedemptionOrderRepository } from "../redemption.repository";
-import { FindOptionsWhere, In } from "typeorm";
-import { REDEMPTION_ORDER_STATE_ID } from "@cot/core";
-import { businessConsumer, businessPublisher } from "../../mq";
+    ExternalOnChainFail_RedemptionOrderState
+} from "./state/index.js";
+import { RedemptionOrderObj } from "./redemption-order-obj.js";
+import type { RedemptionOrder } from "../../../common/index.js";
+import { ORDER_QUEUE_ROUTING_KEY, ORDER_TEMP_QUEUE_ROUTING_KEY, ORDER_TYPE } from "../../../common/index.js";
+import { RedemptionOrderRepository } from "../redemption.repository.js";
+import type { FindOptionsWhere} from "typeorm";
+import { In } from "typeorm";
+import { REDEMPTION_ORDER_STATE_ID } from "@bnqkl/cot-core";
+import { businessConsumer, businessPublisher } from "../../mq/index.js";
 
 /**赎回订单管理器 */
 @Injectable()
 export class RedemptionOrderMgr extends OrderMgr<REDEMPTION_ORDER_STATE_ID, RedemptionOrderState, RedemptionOrder, RedemptionOrderObj, ORDER_TYPE> {
     @Inject(forwardRef(() => RedemptionOrderRepository))
-    public readonly repository: RedemptionOrderRepository;
+    public readonly repository!: RedemptionOrderRepository;
     @Inject(forwardRef(() => ExternalWaitOnChain_RedemptionOrderState))
     private __externalWaitOnChain_RedemptionOrderState!: ExternalWaitOnChain_RedemptionOrderState;
     @Inject(forwardRef(() => ExternalOnChainFail_RedemptionOrderState))

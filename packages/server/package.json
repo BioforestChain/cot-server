@@ -1,25 +1,31 @@
 {
+    "name": "@bnqkl/cot-server",
     "bin": "build/src/main.js",
     "pkg": {
         "scripts": [],
         "assets": []
     },
-    "name": "@cot/server",
     "version": "0.7.3",
     "private": true,
     "description": "cot server",
-    "main": "build/src/index.js",
-    "type": "commonjs",
+    "exports": {
+        ".": "./build/index.js"
+    },
+    "type": "module",
     "keywords": [
         "cot",
         "server"
     ],
-    "author": "wzx",
+    "author": "wzx,Gaubee",
     "license": "MIT",
     "files": [
         "build"
     ],
     "dependencies": {
+        "@bnqkl/cot-core": "workspace:^",
+        "@bnqkl/ipc": "^1.0.1",
+        "@bnqkl/server-util": "^2.0.0",
+        "@bnqkl/util-node": "^1.1.3",
         "@bnqkl/wallet-sdk": "^0.23.1",
         "@nestjs/common": "^10.0.0",
         "@nestjs/config": "^3.2.3",
@@ -32,6 +38,8 @@
         "@nestjs/swagger": "^7.4.0",
         "@nestjs/typeorm": "^10.0.2",
         "amqplib": "^0.10.3",
+        "class-transformer": "^0.5.1",
+        "class-validator": "^0.14.2",
         "cron": "^2.4.4",
         "ethers": "^6.6.4",
         "express-rate-limit": "^6.7.0",

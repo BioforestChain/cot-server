@@ -1,8 +1,8 @@
 import { Controller, forwardRef, Get, Inject, Query, Post, Body } from "@nestjs/common";
 import { ApiOperation, ApiTags } from "@nestjs/swagger";
-import { OrderService } from "./order.service";
-import { AdminAuthorization } from "../../../common";
-import {
+import { OrderService } from "./order.service.js";
+import { AdminAuthorization } from "../../../common/index.js";
+import type {
     FixRechargeOrderReqDto,
     FixRedemptionOrderReqDto,
     GetExternalTransReqDto,
@@ -10,10 +10,10 @@ import {
     GetOrderDetailReqDto,
     GetRechargeOrdersReqDto,
     GetRedemptionOrdersReqDto,
-} from "../dto/order.dto";
+} from "../dto/order.dto.js";
 import { Logger } from "@bnqkl/wallet-sdk";
-import { walletServerSdk } from "../../../helper/wallet-server-sdk";
-import { UserService } from "../user/user.service";
+import { walletServerSdk } from "../../../helper/wallet-server-sdk.js";
+import { UserService } from "../user/user.service.js";
 
 @ApiTags("ADMIN/ORDER")
 @Controller("admin/order")

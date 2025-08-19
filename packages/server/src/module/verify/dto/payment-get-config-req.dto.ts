@@ -5,5 +5,5 @@ export class PaymentGetBusinessConfigReqDto {
     @IsNotEmpty()
     @IsString()
     @ApiProperty({ description: "verifyKey" })
-    verifyKey: string;
+    verifyKey!: string;
 }

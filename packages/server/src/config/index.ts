@@ -1,2 +1,2 @@
-export * from "./config-upgrade.helper";
-export * from "./static-config";
+export * from "./config-upgrade.helper.js";
+export * from "./static-config.js";

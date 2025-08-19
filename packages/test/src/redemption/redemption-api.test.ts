@@ -11,12 +11,12 @@ import {
     staticConfig,
     transactionMaker,
     walletSdk,
-} from "@cot/server";
-import { CommonTest } from "../common/common.test";
-import { RedemptionApi } from "../api/redemption.api";
-import { TransApi } from "../api/trans.api";
-import { ExternalTransferApi } from "../api/external-transfer.api";
-import { BSC_MNEMONIC, ETH_MNEMONIC, TRON_MNEMONIC_1 } from "../constant";
+} from "@bnqkl/cot-server";
+import { CommonTest } from "../common/common.test.js";
+import { RedemptionApi } from "../api/redemption.api.js";
+import { TransApi } from "../api/trans.api.js";
+import { ExternalTransferApi } from "../api/external-transfer.api.js";
+import { BSC_MNEMONIC, ETH_MNEMONIC, TRON_MNEMONIC_1 } from "../constant.js";
 
 @Injectable()
 export class RedemptionApiTest extends CommonTest {

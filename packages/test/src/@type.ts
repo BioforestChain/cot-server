@@ -1,5 +1,5 @@
 import type {} from "@bfmeta/sign-util";
-import { NetWorkHelper } from "@cot/server";
+import { NetWorkHelper } from "@bnqkl/cot-server";
 
 export {};
 declare global {

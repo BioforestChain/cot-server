@@ -1,8 +1,8 @@
-import { REDEMPTION_ORDER_STATE_ID } from "@cot/core";
+import { REDEMPTION_ORDER_STATE_ID } from "@bnqkl/cot-core";
 import { Injectable } from "@nestjs/common";
 import { Logger } from "@bnqkl/wallet-sdk";
-import { RedemptionOrderObj } from "../../redemption-order-obj";
-import { RedemptionOrderFinallyState } from "../redemption-order-finally.state";
+import type { RedemptionOrderObj } from "../../redemption-order-obj.js";
+import { RedemptionOrderFinallyState } from "../redemption-order-finally.state.js";
 
 /**外链上链失败状态 */
 @Injectable()

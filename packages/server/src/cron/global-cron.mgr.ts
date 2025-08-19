@@ -1,6 +1,6 @@
 import { Logger } from "@bnqkl/wallet-sdk";
 import { Injectable, Inject, forwardRef } from "@nestjs/common";
-import { GlobalValueRedisRepository } from "../module/redis";
+import { GlobalValueRedisRepository } from "../module/redis/index.js";
 
 @Injectable()
 export class GlobalCronMgr {

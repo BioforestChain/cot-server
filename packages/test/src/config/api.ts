@@ -1,4 +1,4 @@
-import { HttpHelper } from "../httpHelper";
+import { HttpHelper } from "../httpHelper.js";
 
 export async function getToken(httpHelper: HttpHelper, argv: COTCore.Verify.Api.GetTokenReqDto) {
     const apiPath = "cot/verify/token";

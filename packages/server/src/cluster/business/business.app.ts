@@ -1,8 +1,9 @@
 import { rabbitMQCore } from "@bnqkl/wallet-sdk";
-import { forwardRef, Inject, OnModuleInit } from "@nestjs/common";
-import { RechargeOrderMgr } from "../../module/recharge/order/recharge-order-mgr";
-import { RedemptionOrderMgr } from "../../module/redemption/order/redemption-order-mgr";
-import { BaseApp } from "../app";
+import type { OnModuleInit } from "@nestjs/common";
+import { forwardRef, Inject } from "@nestjs/common";
+import { RechargeOrderMgr } from "../../module/recharge/order/recharge-order-mgr.js";
+import { RedemptionOrderMgr } from "../../module/redemption/order/redemption-order-mgr.js";
+import { BaseApp } from "../app.js";
 
 export class BusinessApp extends BaseApp implements OnModuleInit {
     @Inject(forwardRef(() => RechargeOrderMgr))

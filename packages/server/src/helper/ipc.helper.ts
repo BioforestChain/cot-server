@@ -1,5 +1,6 @@
-import { baseIpcHelpers, IPCHelpers } from "@bnqkl/wallet-sdk";
-import { WORKER } from "../common";
+import type { IPCHelpers } from "@bnqkl/wallet-sdk";
+import { baseIpcHelpers } from "@bnqkl/wallet-sdk";
+import { WORKER } from "../common/index.js";
 
 export const ipcHelpers: IPCHelpers<COTServer.Cluster.IPC_Request_Function> = baseIpcHelpers;
 

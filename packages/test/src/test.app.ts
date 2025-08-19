@@ -1,7 +1,7 @@
 import { forwardRef, Inject, OnModuleInit } from "@nestjs/common";
-import { RechargeApiTest } from "./recharge/recharge-api.test";
-import { RedemptionApiTest } from "./redemption/redemption-api.test";
-import { TransApiTest } from "./trans/trans-api.test";
+import { RechargeApiTest } from "./recharge/recharge-api.test.js";
+import { RedemptionApiTest } from "./redemption/redemption-api.test.js";
+import { TransApiTest } from "./trans/trans-api.test.js";
 export class TestApp implements OnModuleInit {
     @Inject(forwardRef(() => TransApiTest))
     private __transApiTest!: TransApiTest;

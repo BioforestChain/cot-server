@@ -1,1 +1,1 @@
-export * from "./page-req.dto";
+export * from "./page-req.dto.js";

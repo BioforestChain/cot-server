@@ -1,5 +1,5 @@
 import { CHAIN_ID, ExternalAssetType, ExternalChainName } from "@bnqkl/wallet-typings";
-import { INTERNAL_CHAIN_RW_ACCOUNT_TYPE } from "../typings";
+import { INTERNAL_CHAIN_RW_ACCOUNT_TYPE } from "../typings/index.js";
 
 export {};
 declare global {

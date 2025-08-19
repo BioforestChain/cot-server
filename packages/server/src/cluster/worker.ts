@@ -1,4 +1,5 @@
-import { INestApplication, ValidationPipe } from "@nestjs/common";
+import type { INestApplication} from "@nestjs/common";
+import { ValidationPipe } from "@nestjs/common";
 import { DocumentBuilder, SwaggerModule } from "@nestjs/swagger";
 import express from "express";
 import rateLimit from "express-rate-limit";
@@ -6,10 +7,10 @@ import RedisStore from "rate-limit-redis";
 import helmet from "helmet";
 import type http from "node:http";
 import { AllExceptionFilter, CHAIN_NETWORK_TYPE, CommonTransformIterceptor, Logger, redisCore } from "@bnqkl/wallet-sdk";
-import { staticConfig } from "../config";
-import { VERSION } from "../common";
-import { NestExpressApplication } from "@nestjs/platform-express";
-import { GLOBAL_PREFIX } from "@cot/core";
+import { staticConfig } from "../config/index.js";
+import { VERSION } from "../common/index.js";
+import type { NestExpressApplication } from "@nestjs/platform-express";
+import { GLOBAL_PREFIX } from "@bnqkl/cot-core";
 export abstract class BaseWorker {
     server!: http.Server;
     /**

@@ -1,5 +1,5 @@
 import { Module, forwardRef } from "@nestjs/common";
-import { GlobalValueRedisRepository } from "./global-value.redis-repository";
+import { GlobalValueRedisRepository } from "./global-value.redis-repository.js";
 
 @Module({
     imports: [],

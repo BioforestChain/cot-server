@@ -1,6 +1,6 @@
 import { Injectable } from "@nestjs/common";
-import { CMD, WORKER } from "../../common";
-import { ipcHelpers, ProcessCheck, bfmetaSignUtil, walletSdk } from "../../helper";
+import { CMD, WORKER } from "../../common/index.js";
+import { ipcHelpers, ProcessCheck, bfmetaSignUtil, walletSdk } from "../../helper/index.js";
 import { Logger } from "@bnqkl/wallet-sdk";
 import { PromiseOut } from "@bnqkl/util-node";
 
