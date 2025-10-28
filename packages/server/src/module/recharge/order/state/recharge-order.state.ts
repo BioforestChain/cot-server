@@ -1,4 +1,4 @@
-import { INTERNAL_CHAIN_RW_ACCOUNT_TYPE, RECHARGE_ORDER_STATE_ID } from "@cot/core";
+import { INTERNAL_CHAIN_RW_ACCOUNT_TYPE, RECHARGE_ORDER_STATE_ID } from "@bnqkl/cotcore";
 import { forwardRef, Inject } from "@nestjs/common";
 import { Logger, OrderState } from "@bnqkl/wallet-sdk";
 import { RechargeService } from "../../recharge.service";

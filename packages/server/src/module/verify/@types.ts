@@ -1,4 +1,4 @@
-import { CHAIN_ID } from "@cot/core";
+import { CHAIN_ID } from "@bnqkl/cotcore";
 
 export {};
 declare global {

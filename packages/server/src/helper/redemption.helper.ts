@@ -1,6 +1,6 @@
 import { REDEMPTION_DEV_TEST_KEY } from "../common";
 import { ExternalChainName, redisCore, timeTool } from "@bnqkl/wallet-sdk";
-import { REDEMPTION_ORDER_STATE_ID, REDEMPTION_RECORD_STATE } from "@cot/core";
+import { REDEMPTION_ORDER_STATE_ID, REDEMPTION_RECORD_STATE } from "@bnqkl/cotcore";
 
 export class RedemptionHelper {
     /**

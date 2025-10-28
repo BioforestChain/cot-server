@@ -1,5 +1,5 @@
 {
-    "name": "@cot/core",
+    "name": "@bnqkl/cotcore",
     "version": "0.7.3",
     "description": "cot core",
     "main": "build/src/index.js",
@@ -16,5 +16,5 @@
     "dependencies": {
         "@bnqkl/wallet-typings": "^0.23.1"
     },
-    "gitHead": "b9f2d01c7fd83e50903532b0d0c0f9fbca8c4f07"
+    "gitHead": "227c5164cb1b88a18bf5f3e3d3662a6cd61c1375"
 }

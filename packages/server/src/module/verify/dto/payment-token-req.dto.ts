@@ -1,4 +1,4 @@
-import { CHAIN_ID } from "@cot/core";
+import { CHAIN_ID } from "@bnqkl/cotcore";
 import { ApiProperty } from "@nestjs/swagger";
 import { ArrayMaxSize, ArrayMinSize, IsArray, IsNotEmpty, IsString } from "class-validator";
 

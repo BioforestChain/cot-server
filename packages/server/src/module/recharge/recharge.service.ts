@@ -26,7 +26,7 @@ import {
     ExternalTransStateID,
     InternalChainName,
     RECHARGE_TYPE,
-} from "@cot/core";
+} from "@bnqkl/cotcore";
 import { ExternalChainHelper } from "@bnqkl/wallet-sdk";
 import { FindOptionsWhere, In } from "typeorm";
 

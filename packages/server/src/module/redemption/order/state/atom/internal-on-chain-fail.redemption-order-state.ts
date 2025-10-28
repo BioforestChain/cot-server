@@ -1,4 +1,4 @@
-import { REDEMPTION_ORDER_STATE_ID } from "@cot/core";
+import { REDEMPTION_ORDER_STATE_ID } from "@bnqkl/cotcore";
 import { Injectable } from "@nestjs/common";
 import { Logger } from "@bnqkl/wallet-sdk";
 import { RedemptionOrderObj } from "../../redemption-order-obj";

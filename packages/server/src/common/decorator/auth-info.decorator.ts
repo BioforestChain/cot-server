@@ -1,5 +1,5 @@
 import { redisCore, ResponseError } from "@bnqkl/wallet-sdk";
-import { ErrorCode } from "@cot/core";
+import { ErrorCode } from "@bnqkl/cotcore";
 import { createParamDecorator, ExecutionContext } from "@nestjs/common";
 import { VerifyHelper } from "../../helper";
 

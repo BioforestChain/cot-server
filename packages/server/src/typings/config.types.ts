@@ -25,6 +25,7 @@ declare global {
                     rechargeNum?: number;
                 };
                 docs: boolean;
+                prefix?: string;
             }
 
             export interface CoreAPILimitConfig {

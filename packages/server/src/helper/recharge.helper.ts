@@ -1,4 +1,4 @@
-import { RECHARGE_RECORD_STATE, RECHARGE_ORDER_STATE_ID } from "@cot/core";
+import { RECHARGE_RECORD_STATE, RECHARGE_ORDER_STATE_ID } from "@bnqkl/cotcore";
 import { RECHARGE_DEV_TEST_KEY } from "../common";
 import { compareTwoStrLowerCase, InternalAssetType, InternalChainName, redisCore, TOKEN_TO_BEN } from "@bnqkl/wallet-sdk";
 
@@ -110,6 +110,16 @@ export class RechargeHelper {
                 return InternalAssetType.PMC;
             case InternalChainName.BIWMETA:
                 return InternalAssetType.BIW;
+            case InternalChainName.BFMCHAIN:
+                return InternalAssetType.BFM;
+            case InternalChainName.BFCHAINV2:
+                return InternalAssetType.BFT;
+            case InternalChainName.CCCHAIN:
+                return InternalAssetType.CCC;
+            case InternalChainName.ETHMETA:
+                return InternalAssetType.ETHM;
+            case InternalChainName.BTGMETA:
+                return InternalAssetType.BTGM;
             default:
                 throw Error(`not support ${chainName}`);
         }

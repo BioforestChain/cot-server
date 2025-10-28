@@ -2,7 +2,7 @@ import { Inject, Injectable } from "@nestjs/common";
 import { FindOptionsWhere } from "typeorm";
 import { JwtService } from "@nestjs/jwt";
 import { CommonHelper, EncryptHelper, redisCore, ResponseError } from "@bnqkl/server-util";
-import { ErrorCode, USER_STATUS, USER_ROLE } from "@cot/core";
+import { ErrorCode, USER_STATUS, USER_ROLE } from "@bnqkl/cotcore";
 import { VerifyHelper } from "../../../helper";
 import { EXPIRED_TIME_REDIS, OperateRecordEntity, OperateRecordRepository, UserEntity, UserRepository, USER_PASSWORD_DEFAULT } from "../../../common";
 

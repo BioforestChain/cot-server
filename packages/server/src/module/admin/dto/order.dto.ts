@@ -5,7 +5,7 @@ import {
     InternalChainName,
     RECHARGE_ORDER_STATE_ID,
     REDEMPTION_ORDER_STATE_ID,
-} from "@cot/core";
+} from "@bnqkl/cotcore";
 import { ApiProperty } from "@nestjs/swagger";
 import { PageReqDto } from "../../../common";
 

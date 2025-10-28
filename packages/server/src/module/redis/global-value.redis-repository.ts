@@ -7,7 +7,7 @@ import { BFMBusinessConfig } from "../memory/memory.define";
 import { OrderHelper, bfmetaSignUtil, ipcHelpers, walletSdk, walletServerSdk } from "../../helper";
 import * as ethers from "ethers";
 import { EasyMap } from "@bnqkl/util-node";
-import { ExternalAssetType, ExternalChainName, INTERNAL_CHAIN_RW_ACCOUNT_TYPE } from "@cot/core";
+import { ExternalAssetType, ExternalChainName, INTERNAL_CHAIN_RW_ACCOUNT_TYPE } from "@bnqkl/cotcore";
 import { CMD, GLOBAL_VALUE_ENTITY_ID, WORKER } from "../../common";
 
 /**全局的Redis数据操作模型 */

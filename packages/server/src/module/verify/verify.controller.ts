@@ -10,7 +10,7 @@ import {
     PaymentInjectExternalAddressReqDto,
 } from "./dto";
 import { PaymentGetBusinessConfigReqDto } from "./dto/payment-get-config-req.dto";
-import { COT_VERIFY_API_REQUEST } from "@cot/core";
+import { COT_VERIFY_API_REQUEST } from "@bnqkl/cotcore";
 
 @ApiTags("VERIFY")
 @Controller()

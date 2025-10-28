@@ -10,7 +10,7 @@ import {
 import { RechargeOrderObj } from "./recharge-order-obj";
 import { RechargeOrderRepository } from "../recharge.repository";
 import { FindOptionsWhere, In } from "typeorm";
-import { RECHARGE_ORDER_STATE_ID, RECHARGE_TYPE } from "@cot/core";
+import { RECHARGE_ORDER_STATE_ID, RECHARGE_TYPE } from "@bnqkl/cotcore";
 import { ORDER_TYPE, ORDER_QUEUE_ROUTING_KEY, ORDER_TEMP_QUEUE_ROUTING_KEY, RechargeOrder } from "../../../common";
 import { ChainHelper, CommonHelper, InternalAssetType, InternalMainAssetType, Logger, OrderMgr } from "@bnqkl/wallet-sdk";
 import { GlobalValueRedisRepository } from "../../redis/global-value.redis-repository";

@@ -1,4 +1,4 @@
-import { RECHARGE_ORDER_STATE_ID } from "@cot/core";
+import { RECHARGE_ORDER_STATE_ID } from "@bnqkl/cotcore";
 import { Injectable } from "@nestjs/common";
 import { Logger } from "@bnqkl/wallet-sdk";
 import { RechargeHelper, walletServerSdk } from "../../../../../helper";

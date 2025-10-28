@@ -1,4 +1,4 @@
-import { INTERNAL_CHAIN_RW_ACCOUNT_TYPE, RECHARGE_ORDER_STATE_ID } from "@cot/core";
+import { INTERNAL_CHAIN_RW_ACCOUNT_TYPE, RECHARGE_ORDER_STATE_ID } from "@bnqkl/cotcore";
 import { RechargeOrder } from "../../../common";
 import { INTERNAL_TRANS_RETRY_MAX_NUM, Logger, OrderObj } from "@bnqkl/wallet-sdk";
 import { RechargeOrderRepository } from "../recharge.repository";

@@ -1,7 +1,7 @@
 import { Column, Entity, DataSource } from "typeorm";
 import { Injectable } from "@nestjs/common";
 import { BaseEntity, BaseRepository } from "@bnqkl/wallet-sdk";
-import { USER_ROLE } from "@cot/core";
+import { USER_ROLE } from "@bnqkl/cotcore";
 
 @Entity("user")
 export class UserEntity extends BaseEntity {

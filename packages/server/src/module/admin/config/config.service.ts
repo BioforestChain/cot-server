@@ -5,7 +5,7 @@ import { validate } from "class-validator";
 import { plainToClass } from "class-transformer";
 import { Logger } from "@bnqkl/wallet-sdk";
 import { RechargeClassDefine } from "../dto/config.dto";
-import { ExternalChainName } from "@cot/core";
+import { ExternalChainName } from "@bnqkl/cotcore";
 
 @Injectable()
 export class ConfigService {

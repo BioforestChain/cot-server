@@ -1,5 +1,5 @@
 export * from "@bnqkl/wallet-sdk";
-export * from "@cot/core";
+export * from "@bnqkl/cotcore";
 export * from "./common";
 export * from "./config";
 export * from "./helper";

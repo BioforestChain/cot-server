@@ -1,4 +1,4 @@
-import { RECHARGE_ORDER_STATE_ID } from "@cot/core";
+import { RECHARGE_ORDER_STATE_ID } from "@bnqkl/cotcore";
 import { RechargeOrderObj } from "../recharge-order-obj";
 import { RechargeOrderState } from "./recharge-order.state";
 

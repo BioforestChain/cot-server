@@ -8,96 +8,57 @@ import { bfmetaSignUtil, ExternalChainName, timeTool, InternalChainName, Interna
 
 (async () => {
     try {
-        const httpHelper = new HttpHelper();
+        const httpHelper = new HttpHelper("https://walletapi.bfmeta.info", 443);
 
-        const serverPublicKey = await bfmetaSignUtil.getPublicKeyBySecret("serverKey");
-        const config: COTCore.Config.BusinessConfig = {
+        const serverPublicKey = await bfmetaSignUtil.getPublicKeyBySecret("rec6hhioa");
+        const config: any = {
             recharge: {
-                [InternalChainName.BIWMETA]: {
-                    [InternalAssetType.USDT]: {
+                BFMCHAIN: {
+                    USDT: {
                         enable: true,
-                        /**支持的链 */
-                        chainName: InternalChainName.BIWMETA,
-                        /**充值的代币名称 */
-                        assetType: InternalAssetType.USDT,
-                        /**内链币的发行地址 */
-                        applyAddress: "cKFyTV2yNmCxdsnoLSbT25zKTYVa4kHv1e",
-                        /**外链充值支持 */
+                        chainName: "BFMCHAIN",
+                        assetType: "USDT",
+                        applyAddress: "b92ZZCvyDRn8XuSigmQQzzwxKo9iByVdpF",
                         supportChain: {
                             ETH: {
-                                /**兑换是否开启 */
                                 enable: true,
-                                /**合约 */
-                                contract: ETH_SEPOLIA_TEST_LINK_ADDRESS,
-                                depositAddress: "0xf563CEa8C4777E2E32629a9FBba7B1E91C182e56",
-                                /**资产名 显示用 */
+                                contract: "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+                                depositAddress: "0xBbE1876CdE47578019e26b87Eb08A6499D18Feb2",
                                 assetType: "USDT",
+                                logo: "https://pm-fonts-cdn.oss-cn-hongkong.aliyuncs.com/web3-icon/eth/icon-USDT(ERC20).png",
                             },
                             BSC: {
-                                /**兑换是否开启 */
                                 enable: true,
-                                /**合约 */
-                                contract: BSC_TEST_USDT_ADDRESS,
-                                depositAddress: "0x3549613447bD0B04d9862c6c2Ad847D1B4Aa1a8A",
-                                /**资产名 显示用 */
+                                contract: "0x55d398326f99059fF775485246999027B3197955",
+                                depositAddress: "0x8F34E8fb26659bdD860c7E0752c04c2Da86e357D",
                                 assetType: "USDT",
+                                logo: "https://pm-fonts-cdn.oss-cn-hongkong.aliyuncs.com/web3-icon/bsc/icon-USDT(BEP20).png",
                             },
                             TRON: {
-                                /**兑换是否开启 */
                                 enable: true,
-                                /**合约 */
-                                contract: TRON_TEST_USDT_ADDRESS_HEX,
-                                depositAddress: "412b40b43fed1d8704f21e11d8d66d29d495a97751",
-                                /**资产名 显示用 */
+                                contract: "41a614f803b6fd780986a42c78ec9c7f77e6ded13c",
+                                depositAddress: "412c9d3ed50dd097bc491d4164e39fe14d5288b554",
                                 assetType: "USDT",
+                                logo: "https://pm-fonts-cdn.oss-cn-hongkong.aliyuncs.com/web3-icon/tron/icon-USDT(TRC20).png",
                             },
                         },
-                        /**赎回 */
                         redemption: {
                             enable: true,
-                            min: "1" as any,
-                            max: "10000000000000000" as any,
+                            min: "1",
+                            max: "10000000000000000",
                             radioFee: "0",
                             fee: {
-                                [ExternalChainName.ETH]: "2000",
-                                [ExternalChainName.BSC]: "1000",
-                                [ExternalChainName.TRON]: "1500",
+                                ETH: "700000000",
+                                BSC: "50000000",
+                                TRON: "150000000",
                             },
                         },
-                    },
-                    BTRX: {
-                        enable: true,
-                        /**支持的链 */
-                        chainName: InternalChainName.BIWMETA,
-                        /**充值的代币名称 */
-                        assetType: "BTRX" as any,
-                        /**内链币的发行地址 */
-                        applyAddress: "cNH7viNzgbHHoZQj6sbvYrHGX62Pr767ot",
-                        /**外链充值支持 */
-                        supportChain: {
-                            TRON: {
-                                /**兑换是否开启 */
-                                enable: true,
-                                depositAddress: "412b40b43fed1d8704f21e11d8d66d29d495a97751",
-                                /**资产名 显示用 */
-                                assetType: "TRX",
-                            },
-                        },
-                        /**赎回 */
-                        redemption: {
-                            enable: true,
-                            min: "1" as any,
-                            max: "10000000000000000" as any,
-                            radioFee: "0",
-                            fee: {
-                                [ExternalChainName.TRON]: "1500",
-                            },
-                        },
+                        logo: "https://bfm-fonts-cdn.oss-cn-hongkong.aliyuncs.com/meta-icon/biwm/icon-USDT.png",
                     },
                 },
             },
         };
-        const encryptedConfig = await bfmetaSignUtil.encryptData(config, "clientKey", serverPublicKey);
+        const encryptedConfig = await bfmetaSignUtil.encryptData(config, "g42hqibk", serverPublicKey);
         const result = await setConfig(httpHelper, {
             config: encryptedConfig,
         });

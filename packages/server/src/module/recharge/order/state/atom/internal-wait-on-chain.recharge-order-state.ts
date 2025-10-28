@@ -13,7 +13,7 @@ import { GLOBAL_VALUE_ENTITY_ID, LOCAL_MQ_ID, ORDER_TEMP_QUEUE_ROUTING_KEY, RECH
 import { OrderHelper, RechargeHelper, walletServerSdk } from "../../../../../helper";
 import { MemoryService } from "../../../../../module/memory/memory.service";
 import { RechargeOrderObj } from "../../recharge-order-obj";
-import { INTERNAL_CHAIN_RW_ACCOUNT_TYPE, RECHARGE_ORDER_STATE_ID, RECHARGE_TYPE } from "@cot/core";
+import { INTERNAL_CHAIN_RW_ACCOUNT_TYPE, RECHARGE_ORDER_STATE_ID, RECHARGE_TYPE } from "@bnqkl/cotcore";
 import { businessPublisher } from "../../../../mq";
 import { RechargeOrderPendingState } from "../recharge-order-pending.state";
 import { GlobalValueRedisRepository } from "../../../../redis";

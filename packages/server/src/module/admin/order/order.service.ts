@@ -1,4 +1,4 @@
-import { FIX_RECHARGE_ORDER_TYPE, FIX_REDEMPTION_ORDER_TYPE } from "@cot/core";
+import { FIX_RECHARGE_ORDER_TYPE, FIX_REDEMPTION_ORDER_TYPE } from "@bnqkl/cotcore";
 import { forwardRef, Inject, Injectable } from "@nestjs/common";
 import { FindOptionsWhere } from "typeorm";
 import { RechargeOrder, RedemptionOrder } from "../../../common";

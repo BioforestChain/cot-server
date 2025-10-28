@@ -1,5 +1,5 @@
 import { FSMEntity, InternalAssetType, InternalChainName } from "@bnqkl/wallet-sdk";
-import { ExternalChainName, RECHARGE_ORDER_STATE_ID, RECHARGE_TYPE } from "@cot/core";
+import { ExternalChainName, RECHARGE_ORDER_STATE_ID, RECHARGE_TYPE } from "@bnqkl/cotcore";
 import { Column, Entity } from "typeorm";
 
 @Entity("payment_recharge_order")

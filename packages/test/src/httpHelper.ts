@@ -1,4 +1,4 @@
-import * as http from "node:http";
+import * as http from "node:https";
 import * as url from "node:url";
 import { IncomingMessage } from "node:http";
 import { staticConfig } from "@cot/server";
@@ -55,7 +55,7 @@ export class HttpHelper {
     }
 
     private __getUrl(apiPath: string) {
-        return `http://${this.__ip}:${this.__port}/${apiPath}`;
+        return `${this.__ip}:${this.__port}/${apiPath}`;
     }
 
     parseGetRequestParameter(imcomingMessage: IncomingMessage) {
@@ -129,6 +129,7 @@ export class HttpHelper {
     post<T, U>(apiPath: string, argv: T) {
         return new Promise<RequestReturn<U>>((resolve, reject) => {
             const url = this.__getUrl(apiPath);
+            console.log(url);
             const req = http.request(url, { method: "POST", headers: this.__getHeadersPost(), timeout: 30000 }, async (res) => {
                 const body = await this.parsePostRequestParameter(res);
                 return resolve(body as any);

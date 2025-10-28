@@ -1,4 +1,4 @@
-import { REDEMPTION_ORDER_STATE_ID, ExternalAssetType, InternalChainName, InternalTransStateID, REDEMPTION_TYPE } from "@cot/core";
+import { REDEMPTION_ORDER_STATE_ID, ExternalAssetType, InternalChainName, InternalTransStateID, REDEMPTION_TYPE } from "@bnqkl/cotcore";
 import { forwardRef, Inject, Injectable } from "@nestjs/common";
 import { $asyncAllNoNullMap, ExternalChainHelper, BCF_DEFAULT_DECIMALS, Logger, InternalAssetType, JSBIHelper, ExternalChainName } from "@bnqkl/wallet-sdk";
 import { RedemptionOrder, LOCAL_MQ_ID, ORDER_TYPE, TRANSACTION_LINK_TYPE } from "../../common";

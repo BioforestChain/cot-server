@@ -12,7 +12,7 @@ import { RedemptionOrderObj } from "./redemption-order-obj";
 import { ORDER_QUEUE_ROUTING_KEY, ORDER_TEMP_QUEUE_ROUTING_KEY, ORDER_TYPE, RedemptionOrder } from "../../../common";
 import { RedemptionOrderRepository } from "../redemption.repository";
 import { FindOptionsWhere, In } from "typeorm";
-import { REDEMPTION_ORDER_STATE_ID } from "@cot/core";
+import { REDEMPTION_ORDER_STATE_ID } from "@bnqkl/cotcore";
 import { businessConsumer, businessPublisher } from "../../mq";
 
 /**赎回订单管理器 */

@@ -8,7 +8,7 @@ import {
     RedemptionV2ReqDto,
 } from "./dto";
 import { RedemptionService } from "./redemption.service";
-import { COT_REDEMPTION_API_REQUEST } from "@cot/core";
+import { COT_REDEMPTION_API_REQUEST } from "@bnqkl/cotcore";
 
 @ApiTags("REDEMPTION")
 @Controller()

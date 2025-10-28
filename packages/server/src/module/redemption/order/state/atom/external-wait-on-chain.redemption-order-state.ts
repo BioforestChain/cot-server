@@ -3,7 +3,7 @@ import { sleep, Logger, EXTERNAL_TRANS_RETRY_INVERVAL, EXTERNAL_TRANS_RETRY_MAX_
 import { LOCAL_MQ_ID, ORDER_TEMP_QUEUE_ROUTING_KEY, TRANSACTION_LINK_TYPE } from "../../../../../common";
 import { RedemptionHelper, walletServerSdk } from "../../../../../helper";
 import { RedemptionOrderObj } from "../../redemption-order-obj";
-import { ExternalChainName, REDEMPTION_ORDER_STATE_ID } from "@cot/core";
+import { ExternalChainName, REDEMPTION_ORDER_STATE_ID } from "@bnqkl/cotcore";
 import { businessPublisher } from "../../../../mq";
 import { RedemptionOrderPendingState } from "../redemption-order-pending.state";
 import { GlobalValueRedisRepository } from "../../../../redis/global-value.redis-repository";

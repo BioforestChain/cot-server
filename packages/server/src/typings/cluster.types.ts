@@ -1,4 +1,4 @@
-import { ExternalAssetType, ExternalChainName, INTERNAL_CHAIN_RW_ACCOUNT_TYPE } from "@cot/core";
+import { ExternalAssetType, ExternalChainName, INTERNAL_CHAIN_RW_ACCOUNT_TYPE } from "@bnqkl/cotcore";
 import { CMD } from "../common";
 
 export {};

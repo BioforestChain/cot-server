@@ -1,7 +1,7 @@
 import { PageReqDto } from "../../../common";
 import { ApiProperty } from "@nestjs/swagger";
 import { IsNotEmpty, IsOptional, IsString } from "class-validator";
-import { ExternalChainName, InternalChainName, RECHARGE_RECORD_STATE } from "@cot/core";
+import { ExternalChainName, InternalChainName, RECHARGE_RECORD_STATE } from "@bnqkl/cotcore";
 import { Type } from "class-transformer";
 
 export class RechargeRecordsReqDto extends PageReqDto implements COTCore.Recharge.Api.RechargeRecordsReqDto {

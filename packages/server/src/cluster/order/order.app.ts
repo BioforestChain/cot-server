@@ -1,5 +1,5 @@
 import { InternalAssetType, Logger, rabbitMQCore, sleep, TRANS_QUEUE_ROUTING_KEY } from "@bnqkl/wallet-sdk";
-import { ExternalAssetType, ExternalChainName, InternalChainName, INTERNAL_CHAIN_RW_ACCOUNT_TYPE } from "@cot/core";
+import { ExternalAssetType, ExternalChainName, InternalChainName, INTERNAL_CHAIN_RW_ACCOUNT_TYPE } from "@bnqkl/cotcore";
 import { forwardRef, Inject, OnModuleInit } from "@nestjs/common";
 import { CMD, LOCAL_MQ_ID, TRANSACTION_LINK_TYPE } from "../../common";
 import { bfmetaSignUtil, ipcHelpers, walletConsumer, walletSdk, walletServerSdk } from "../../helper";

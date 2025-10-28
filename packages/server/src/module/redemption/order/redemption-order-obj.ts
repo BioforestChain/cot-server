@@ -1,4 +1,4 @@
-import { REDEMPTION_ORDER_STATE_ID } from "@cot/core";
+import { REDEMPTION_ORDER_STATE_ID } from "@bnqkl/cotcore";
 import { Logger, OrderObj } from "@bnqkl/wallet-sdk";
 import { RedemptionOrder } from "../../../common";
 import { RedemptionOrderRepository } from "../redemption.repository";

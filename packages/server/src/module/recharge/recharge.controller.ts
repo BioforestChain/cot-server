@@ -1,4 +1,4 @@
-import { encodeRechargeV2ToTrInfoData, COT_RECHARGE_API_REQUEST } from "@cot/core";
+import { encodeRechargeV2ToTrInfoData, COT_RECHARGE_API_REQUEST } from "@bnqkl/cotcore";
 import { Body, Controller, forwardRef, Get, Inject, Post, Query } from "@nestjs/common";
 import { ApiOperation, ApiTags } from "@nestjs/swagger";
 import { internalChainHelper, VerifyHelper } from "../../helper";

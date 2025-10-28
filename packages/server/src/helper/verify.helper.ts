@@ -1,4 +1,4 @@
-import { ErrorCode, CHAIN_ID, ExternalChainName, VERIFY_EXPIRE_TIME } from "@cot/core";
+import { ErrorCode, CHAIN_ID, ExternalChainName, VERIFY_EXPIRE_TIME } from "@bnqkl/cotcore";
 import { compareTwoStrLowerCase, $noNullMap, Logger, ResponseError } from "@bnqkl/wallet-sdk";
 import { internalChainHelper, externalChainHelper, bfmetaSignUtil } from "./wallet-server-sdk";
 

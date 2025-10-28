@@ -9,7 +9,9 @@ import { AllExceptionFilter, CHAIN_NETWORK_TYPE, CommonTransformIterceptor, Logg
 import { staticConfig } from "../config";
 import { VERSION } from "../common";
 import { NestExpressApplication } from "@nestjs/platform-express";
-import { GLOBAL_PREFIX } from "@cot/core";
+import { GLOBAL_PREFIX } from "@bnqkl/cotcore";
+
+const prefix = staticConfig.prefix ? staticConfig.prefix : GLOBAL_PREFIX;
 export abstract class BaseWorker {
     server!: http.Server;
     /**
@@ -17,8 +19,8 @@ export abstract class BaseWorker {
      * @param app
      */
     async initAppModule(app: NestExpressApplication) {
-        app.use(`/${GLOBAL_PREFIX}/verify`, express.json({ limit: "50mb" }));
-        app.use(`/${GLOBAL_PREFIX}/verify`, express.urlencoded({ limit: "50mb", extended: true }));
+        app.use(`/${prefix}/verify`, express.json({ limit: "50mb" }));
+        app.use(`/${prefix}/verify`, express.urlencoded({ limit: "50mb", extended: true }));
         app.use(express.json());
         app.use(express.urlencoded({ extended: true }));
         // 跨域处理
@@ -45,9 +47,9 @@ export abstract class BaseWorker {
                 return (staticConfig.apiLimit.whiteList || []).includes(ipV4);
             },
         });
-        app.use(`/${GLOBAL_PREFIX}`, limiter);
+        app.use(`/${prefix}`, limiter);
         await redisCore.connect(staticConfig.redis.server);
-        app.setGlobalPrefix(GLOBAL_PREFIX);
+        app.setGlobalPrefix(prefix);
         // 添加全局验证管道
         app.useGlobalPipes(new ValidationPipe({ enableDebugMessages: true, transform: true }));
         // 全局异常过滤器

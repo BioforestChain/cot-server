@@ -1,5 +1,5 @@
 import { FSMEntity, InternalAssetType, InternalChainName } from "@bnqkl/wallet-sdk";
-import { ExternalAssetType, ExternalChainName, REDEMPTION_ORDER_STATE_ID, REDEMPTION_TYPE } from "@cot/core";
+import { ExternalAssetType, ExternalChainName, REDEMPTION_ORDER_STATE_ID, REDEMPTION_TYPE } from "@bnqkl/cotcore";
 import { Column, Entity } from "typeorm";
 
 @Entity("payment_redemption_order")
