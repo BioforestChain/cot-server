@@ -568,7 +568,7 @@ export class RechargeService {
             order.internalChain = internalChain;
             order.internalAddress = internalAddress;
             // rechargeTxId先用entityId保证唯一索引
-            order.rechargeAmount = BigInt(1000000);
+            order.rechargeAmount = BigInt(100000);
             order.rechargeTxId = order.entityId;
             order.rechargeAssetType = mainAssetType;
             order.rechargeType = RECHARGE_TYPE.AIRDROP;

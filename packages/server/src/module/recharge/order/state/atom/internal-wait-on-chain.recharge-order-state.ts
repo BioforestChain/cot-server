@@ -130,6 +130,7 @@ export class InternalWaitOnChain_RechargeOrderState extends RechargeOrderPending
                             linkId: orderId,
                         },
                     });
+
                     orderObj.rechargeTxId = resp.txId;
                     // 立即保存
                     await orderObj.save();

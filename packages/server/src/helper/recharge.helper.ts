@@ -120,6 +120,8 @@ export class RechargeHelper {
                 return InternalAssetType.ETHM;
             case InternalChainName.BTGMETA:
                 return InternalAssetType.BTGM;
+            case InternalChainName.BFMETACHAIN:
+                return InternalAssetType.BFM;
             default:
                 throw Error(`not support ${chainName}`);
         }

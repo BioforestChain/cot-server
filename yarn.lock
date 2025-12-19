@@ -1024,66 +1024,73 @@
   resolved "https://registry.yarnpkg.com/@bfmeta/transaction-maker-typings/-/transaction-maker-typings-1.1.11.tgz#2c124853b6bb1a84341944b133104c489bc548f6"
   integrity sha512-EglFjraKDfnP5H0dogkTAlGusvvtcnbV35bQmucSv6kCvJO8wGo0l4gwVWnpnesgMedq8I1SyQfmmPrBcnBIUA==
 
-"@bfmeta/wallet-bcf@1.6.10":
-  version "1.6.10"
-  resolved "https://registry.yarnpkg.com/@bfmeta/wallet-bcf/-/wallet-bcf-1.6.10.tgz#05200277c8db28d2379013609ba398bd05e7d6ce"
-  integrity sha512-aChSrdpUbup3zM3gKpot9aAIAA8qx5vhx9ved/8/fTtleCMZSLDLeAfnh7KEfgpZWUHdItY/9Un72O9ZGiWssg==
+"@bfmeta/wallet-bcf@1.6.11":
+  version "1.6.11"
+  resolved "https://registry.npmmirror.com/@bfmeta/wallet-bcf/-/wallet-bcf-1.6.11.tgz#eeaf66d66482664410a79f300ece6c9ca04a2c16"
+  integrity sha512-Cds1LhuFR9SlnzazUzbDY6qwZBw5FWZY5z/UBfcf/M1iReDtrswR4SA486MY/Vh3alsd5BxjDI1QWPIa6j2Spw==
   dependencies:
-    "@bfmeta/wallet-helpers" "1.6.10"
-    "@bfmeta/wallet-typings" "1.6.10"
+    "@bfmeta/wallet-helpers" "1.6.11"
+    "@bfmeta/wallet-typings" "1.6.11"
 
-"@bfmeta/wallet-bsc@1.6.10":
-  version "1.6.10"
-  resolved "https://registry.yarnpkg.com/@bfmeta/wallet-bsc/-/wallet-bsc-1.6.10.tgz#464963ce00340de5105dc1aee7efaf89b892c93a"
-  integrity sha512-YUPQy+yJAkLNds0Q4A/3YNPjJ3lzuCaX9Y+L5J6jUCn4eM84TTxa1FSfIQDCHuhr9ZRKBU9SrKS9Wgff90cUUQ==
+"@bfmeta/wallet-bsc@1.6.11":
+  version "1.6.11"
+  resolved "https://registry.npmmirror.com/@bfmeta/wallet-bsc/-/wallet-bsc-1.6.11.tgz#4f85215736c9e04feca4e7684652bb3057b2e94c"
+  integrity sha512-0LfWv5lDvm9/h7DYf3eSIip+su2ONqIg0hK3X0kJLHKFVFf4ZEEdVTxxtFCyNiZV9VUXlIJwX5rVDwcLZSSoDg==
   dependencies:
-    "@bfmeta/wallet-typings" "1.6.10"
+    "@bfmeta/wallet-typings" "1.6.11"
     web3 "4.8.0"
 
-"@bfmeta/wallet-eth@1.6.10":
-  version "1.6.10"
-  resolved "https://registry.yarnpkg.com/@bfmeta/wallet-eth/-/wallet-eth-1.6.10.tgz#ec5d5061b4ee99d63c130039b0dbea5f79e2c852"
-  integrity sha512-L4zRfVq1flCTzXHR1OpoKi9ybHk4oaDUhAE+WAlB2yX0SqlzE2B1R8+arjkHY0n1ihsGhFTXMuHTfCNQDNXGxA==
+"@bfmeta/wallet-eth@1.6.11":
+  version "1.6.11"
+  resolved "https://registry.npmmirror.com/@bfmeta/wallet-eth/-/wallet-eth-1.6.11.tgz#39fc4ed8ac386635e09f72e2a62f65cd1be504d9"
+  integrity sha512-lcRC2XExnYoGWiZTh2gkrr5Ap/67ICaUQ8E+xYPQyKwjd+LLyaTvPt3JW00sWXvhQ4UBiJLgoqQOdazBQmhvZA==
   dependencies:
-    "@bfmeta/wallet-typings" "1.6.10"
+    "@bfmeta/wallet-typings" "1.6.11"
     "@ethereumjs/tx" "^4.2.0"
     ethereumjs-tx "2.1.2"
     web3 "4.8.0"
 
-"@bfmeta/wallet-helpers@1.6.10":
-  version "1.6.10"
-  resolved "https://registry.yarnpkg.com/@bfmeta/wallet-helpers/-/wallet-helpers-1.6.10.tgz#5a63f58921657a952c9a9d660e8a896feedb5316"
-  integrity sha512-N+LK9CAeubXRhfNlPxldqeY5huLzhJGUqkxd+pHGi34vfaIghnApGx3PhlQ7ZoXSgODEtmHmWPMuMjTZnNz2zQ==
+"@bfmeta/wallet-helpers@1.6.11":
+  version "1.6.11"
+  resolved "https://registry.npmmirror.com/@bfmeta/wallet-helpers/-/wallet-helpers-1.6.11.tgz#70794d38781b8baf194c6e4372bbdb071cb20296"
+  integrity sha512-22IxaxDHNSHonQBFLQ85wR6Hwn7nbdNVkgilj6s0zKL03SUKEUsBwuG7YTHwFkPN7eO2QXJ6pZKlR2xARuVFCA==
   dependencies:
-    "@bfmeta/wallet-typings" "1.6.10"
+    "@bfmeta/wallet-typings" "1.6.11"
 
-"@bfmeta/wallet-tron@1.6.10":
-  version "1.6.10"
-  resolved "https://registry.yarnpkg.com/@bfmeta/wallet-tron/-/wallet-tron-1.6.10.tgz#99b9e55e59032a82421a91f283837fcae1ba47c3"
-  integrity sha512-PyXU9t9drDSOH4WFUJpmVq8HFtTBrrjQJe4jCQmnKVuDOvQ8I7SEoM75UPOI3ATU+haEmmpEXIK54gSwD13mXw==
+"@bfmeta/wallet-tron@1.6.11":
+  version "1.6.11"
+  resolved "https://registry.npmmirror.com/@bfmeta/wallet-tron/-/wallet-tron-1.6.11.tgz#9231cfb81387f15c7ce7da86526a207b298743b1"
+  integrity sha512-bNURUgFGYV1/+7dkeesY9ZpepTrEGwXX40a0VmMRcTPVL+mSxaf2PHK2Ays1l+y/Q2/ANC1ih1ppXnw9xVME3w==
   dependencies:
-    "@bfmeta/wallet-typings" "1.6.10"
+    "@bfmeta/wallet-typings" "1.6.11"
     ethers "^5.7.1"
     tronweb "5.3.1"
 
-"@bfmeta/wallet-typings@1.6.10", "@bfmeta/wallet-typings@^1.6.0", "@bfmeta/wallet-typings@^1.6.10":
+"@bfmeta/wallet-typings@1.6.11":
+  version "1.6.11"
+  resolved "https://registry.npmmirror.com/@bfmeta/wallet-typings/-/wallet-typings-1.6.11.tgz#c725a725312f894c2391379a4b7f167f418043a8"
+  integrity sha512-h4GdUvDy8niVKcvfNXjETGT/fiNf5QyfxFTCvxxEjXs3KNeHEGt3Egum3mK+GfdQPdws6QYhQ5osA/pg6QR22w==
+  dependencies:
+    "@bfmeta/node-sdk" "^4.0.7"
+
+"@bfmeta/wallet-typings@^1.6.0", "@bfmeta/wallet-typings@^1.6.10":
   version "1.6.10"
   resolved "https://registry.yarnpkg.com/@bfmeta/wallet-typings/-/wallet-typings-1.6.10.tgz#ce716a043a5f3873e65e0f631773e9dcf16b2b5c"
   integrity sha512-ytIfZ8n05xF9DLWVkijrCjW7iRm5YTq1TWtyCsDJb6iuzKUUZ4wuV90pf9uPYC+foAEjY1SvXgcskzsCzj4+3Q==
   dependencies:
     "@bfmeta/node-sdk" "^4.0.7"
 
-"@bfmeta/wallet@^1.6.10":
-  version "1.6.10"
-  resolved "https://registry.yarnpkg.com/@bfmeta/wallet/-/wallet-1.6.10.tgz#1144774a71aae4ce695a509ec43f214f8c3e4c3f"
-  integrity sha512-ipMJOAafAjZk4tALLagAscZI2H2zAGVQNAEs/7y3rJB1h3O+pzLpFT1xK1+iJeF+967zTjWSrtomPwNTkNg8ag==
+"@bfmeta/wallet@^1.6.11":
+  version "1.6.11"
+  resolved "https://registry.npmmirror.com/@bfmeta/wallet/-/wallet-1.6.11.tgz#6ac04aaa5e43df6c36b74f0eb01b3e0e8d00fb4b"
+  integrity sha512-zaJiOtvI7Uz8f14GVMfoJNtVfXhbDSor7krHn7B2k/oXJ/qxlj1yxDQCfGO/aJ/NUysX7El0K/x/6doe8fZO0w==
   dependencies:
-    "@bfmeta/wallet-bcf" "1.6.10"
-    "@bfmeta/wallet-bsc" "1.6.10"
-    "@bfmeta/wallet-eth" "1.6.10"
-    "@bfmeta/wallet-helpers" "1.6.10"
-    "@bfmeta/wallet-tron" "1.6.10"
-    "@bfmeta/wallet-typings" "1.6.10"
+    "@bfmeta/wallet-bcf" "1.6.11"
+    "@bfmeta/wallet-bsc" "1.6.11"
+    "@bfmeta/wallet-eth" "1.6.11"
+    "@bfmeta/wallet-helpers" "1.6.11"
+    "@bfmeta/wallet-tron" "1.6.11"
+    "@bfmeta/wallet-typings" "1.6.11"
     "@bnqkl/util-node" "^1.1.3"
 
 "@bnqkl/ipc-request@^1.0.0":
@@ -1106,10 +1113,10 @@
   dependencies:
     "@deno/shim-deno" "~0.16.1"
 
-"@bnqkl/server-util@^1.1.0":
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/@bnqkl/server-util/-/server-util-1.1.2.tgz#694bfedb5e04938acad424b9de7eb0561487d6d9"
-  integrity sha512-miTl+IVBL+c06x1n2+2EhMKEn2DlPKoVFm6CQZ5dCz0fMO0+W50F6Q3TwO6bCtP+jLfYBJVszsxAEBOAx7jFqA==
+"@bnqkl/server-util@^1.3.4":
+  version "1.3.4"
+  resolved "https://registry.npmmirror.com/@bnqkl/server-util/-/server-util-1.3.4.tgz#2565e2329e3579681f337e4b769482cd77840c3f"
+  integrity sha512-EG4cvGcawwZaoRRHBXNwO16dz5Z4mV8vuqAdxS7kiDy8gIAYosPICJxf2wL/d8dfNXBSqrroH5peo9EZYzZB9w==
   dependencies:
     "@bfmeta/wallet-typings" "^1.6.0"
     "@bnqkl/ipc" "^1.0.1"
@@ -1129,7 +1136,7 @@
     redis "4.6.7"
     request "^2.88.2"
     rxjs "^7.2.0"
-    typeorm "^0.3.17"
+    typeorm "0.3.20"
 
 "@bnqkl/util-node@*", "@bnqkl/util-node@^1.1.3":
   version "1.1.3"
@@ -1139,19 +1146,19 @@
     reflect-metadata "0.1.13"
     tslib "2.3.1"
 
-"@bnqkl/wallet-sdk@^0.23.1":
-  version "0.23.1"
-  resolved "https://registry.yarnpkg.com/@bnqkl/wallet-sdk/-/wallet-sdk-0.23.1.tgz#cd0919cb34f6f16340598719f501d575963e5789"
-  integrity sha512-gPk97k2mN55EL2ReYZc0OMaGO7qKj8A5sSeNz4xJys8guM2kygeYZzaNweyWj04glGU17JetOm81P8teO6Ke+g==
+"@bnqkl/wallet-sdk@^0.23.7":
+  version "0.23.7"
+  resolved "https://registry.npmmirror.com/@bnqkl/wallet-sdk/-/wallet-sdk-0.23.7.tgz#52dea8bf4405e14f2ac7df994dcc0cf59bcbc940"
+  integrity sha512-dTW1gXsPrvRarVnhfBgYNZhok/rAnpFcNnZjHu71lkjWaIRvZ18yvGBXWYIJ4ekWGb3K6wGgrpQ1fikzCoc6WA==
   dependencies:
     "@bfmeta/transaction-maker-api" "^1.1.11"
-    "@bfmeta/wallet" "^1.6.10"
-    "@bnqkl/server-util" "^1.1.0"
+    "@bfmeta/wallet" "^1.6.11"
+    "@bnqkl/server-util" "^1.3.4"
 
-"@bnqkl/wallet-typings@^0.23.1":
-  version "0.23.2"
-  resolved "https://registry.yarnpkg.com/@bnqkl/wallet-typings/-/wallet-typings-0.23.2.tgz#d829fa629a3cae2f08d8b7d0e44693efe52b9d2e"
-  integrity sha512-TaIIj0XiX7NLkaYr+Q/JtRagEFjYcHqeG1r/zimUnJ5zAnx5vJxh9IbX1JMme0DO7K5pv3Db4yKEMqAlMh7G5w==
+"@bnqkl/wallet-typings@^0.23.7":
+  version "0.23.7"
+  resolved "https://registry.npmmirror.com/@bnqkl/wallet-typings/-/wallet-typings-0.23.7.tgz#0141e0d61a9a16a56436f2b46c130755e8850d7a"
+  integrity sha512-sqI8k80s/Rjr8p0NpdSq2GqYdnpzUXOfw3QxkCJj7rpmYuAACfoy1b4ZNKMcb+xtCGOUWknItdJFGs3DFbLi2g==
   dependencies:
     "@bfmeta/transaction-maker-typings" "^1.1.0"
     "@bfmeta/wallet-typings" "^1.6.10"
@@ -9998,7 +10005,7 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha512-/aCDEGatGvZ2BIk+HmLf4ifCJFwvKFNb9/JeZPMulfgFracn9QFcAf5GO8B/mweUjSoblS5In0cWhqpfs/5PQA==
 
-typeorm@^0.3.17, typeorm@^0.3.20:
+typeorm@0.3.20, typeorm@^0.3.20:
   version "0.3.20"
   resolved "https://registry.yarnpkg.com/typeorm/-/typeorm-0.3.20.tgz#4b61d737c6fed4e9f63006f88d58a5e54816b7ab"
   integrity sha512-sJ0T08dV5eoZroaq9uPKBoNcGslHBR4E4y+EBHs//SiGbblGe7IeduP/IH4ddCcj0qp3PHwDwGnuvqEAnKlq/Q==
