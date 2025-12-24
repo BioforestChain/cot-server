@@ -1,6 +1,6 @@
 {
     "name": "@bnqkl/cotcore",
-    "version": "0.7.3",
+    "version": "0.7.4",
     "description": "cot core",
     "main": "build/src/index.js",
     "type": "commonjs",
