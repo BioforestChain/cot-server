@@ -1146,19 +1146,19 @@
     reflect-metadata "0.1.13"
     tslib "2.3.1"
 
-"@bnqkl/wallet-sdk@^0.23.7":
-  version "0.23.7"
-  resolved "https://registry.npmmirror.com/@bnqkl/wallet-sdk/-/wallet-sdk-0.23.7.tgz#52dea8bf4405e14f2ac7df994dcc0cf59bcbc940"
-  integrity sha512-dTW1gXsPrvRarVnhfBgYNZhok/rAnpFcNnZjHu71lkjWaIRvZ18yvGBXWYIJ4ekWGb3K6wGgrpQ1fikzCoc6WA==
+"@bnqkl/wallet-sdk@^0.23.8":
+  version "0.23.8"
+  resolved "https://registry.yarnpkg.com/@bnqkl/wallet-sdk/-/wallet-sdk-0.23.8.tgz#75d94f9fad8c6ede745e15d5e14eab0cb1d80979"
+  integrity sha512-wflJQ+cyI/qJVUO9nLkjuSxiI/zu8uiP/bPaZdf6IxivPBzEdH8aSZRH9Xz+FgtwqtUNlullnQxRC+1Qa42MnA==
   dependencies:
     "@bfmeta/transaction-maker-api" "^1.1.11"
     "@bfmeta/wallet" "^1.6.11"
     "@bnqkl/server-util" "^1.3.4"
 
-"@bnqkl/wallet-typings@^0.23.7":
-  version "0.23.7"
-  resolved "https://registry.npmmirror.com/@bnqkl/wallet-typings/-/wallet-typings-0.23.7.tgz#0141e0d61a9a16a56436f2b46c130755e8850d7a"
-  integrity sha512-sqI8k80s/Rjr8p0NpdSq2GqYdnpzUXOfw3QxkCJj7rpmYuAACfoy1b4ZNKMcb+xtCGOUWknItdJFGs3DFbLi2g==
+"@bnqkl/wallet-typings@^0.23.8":
+  version "0.23.8"
+  resolved "https://registry.yarnpkg.com/@bnqkl/wallet-typings/-/wallet-typings-0.23.8.tgz#30ad7ee3fd014aa8ad9d92016cf09abf18e5de37"
+  integrity sha512-tH3fS4/6ZalLiNStbvJ7qhcZO4YM2He51uHFOGj0RKtNdDC/BIyebYCTg8ZfCoGDD6kBq3+g3FwnJkJDz0jBsA==
   dependencies:
     "@bfmeta/transaction-maker-typings" "^1.1.0"
     "@bfmeta/wallet-typings" "^1.6.10"

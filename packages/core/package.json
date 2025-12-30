@@ -14,7 +14,7 @@
         "build"
     ],
     "dependencies": {
-        "@bnqkl/wallet-typings": "^0.23.7"
+        "@bnqkl/wallet-typings": "^0.23.8"
     },
     "gitHead": "227c5164cb1b88a18bf5f3e3d3662a6cd61c1375"
 }
